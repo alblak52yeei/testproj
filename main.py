@@ -1,1 +1,0 @@
-from tests.test_settings import test_settings
