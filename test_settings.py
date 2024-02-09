@@ -7,7 +7,7 @@ class test_settings(unittest.TestCase):
 
         result = manager.open("../tests/settings.json")
 
-        assert result == True
+        assert result != False
 
     def test_check_create_manager(self):
         manager1 = settings_manager()
@@ -18,18 +18,11 @@ class test_settings(unittest.TestCase):
 
         assert(manager1.number == manager2.number)
 
-    def test_check_manager_open(self):
-        manager = settings_manager()
-        
-        assert manager.open("../tests/settings.json")
-
     def test_check_manager_convert(self):
         manager = settings_manager()
-        manager.open("../tests/settings.json")
+        settings, data = manager.open("../tests/settings.json")
 
-        data = manager.convert()
-        
-        v = [i for i in dir(data) if not i.startswith("_") and getattr(data, i) is None]
+        v = [i for i in dir(settings) if not i.startswith("_") and getattr(settings, i) != data[i] ]
 
         assert len(v) == 0
 

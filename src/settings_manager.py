@@ -18,7 +18,7 @@ class settings_manager(object):
     
         return cls.instance
     
-    def convert(self):
+    def __convert(self):
         if len(self.__data) == 0:
             raise Exception("ERROR: Невозможно создать объект типа settings.py")
         
@@ -31,7 +31,7 @@ class settings_manager(object):
 
             setattr(self.__settings, field, self.__data[field])
 
-        return self.__settings
+        return self.__settings, self.__data
         
 
     def __init__(self) -> None:
@@ -48,7 +48,7 @@ class settings_manager(object):
 
         try:
             self.__open()
-            return True
+            return self.__convert()
         except:
             return False
 
