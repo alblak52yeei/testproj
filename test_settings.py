@@ -20,7 +20,10 @@ class test_settings(unittest.TestCase):
 
     def test_check_manager_convert(self):
         manager = settings_manager()
-        settings, data = manager.open("../tests/settings.json")
+        manager.open("../tests/settings.json")
+        
+        settings = manager.settings
+        data = manager.data
 
         v = [i for i in dir(settings) if not i.startswith("_") and getattr(settings, i) != data[i] ]
 

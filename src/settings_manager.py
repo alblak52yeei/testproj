@@ -31,8 +31,7 @@ class settings_manager(object):
 
             setattr(self.__settings, field, self.__data[field])
 
-        return self.__settings, self.__data
-        
+
 
     def __init__(self) -> None:
         self.__unique_number = uuid.uuid4()
@@ -48,7 +47,7 @@ class settings_manager(object):
 
         try:
             self.__open()
-            return self.__convert()
+            self.__convert()
         except:
             return False
 
@@ -63,6 +62,14 @@ class settings_manager(object):
         with open(settings_file, "r") as read_file:
             self.__data = json.load(read_file)
 
+    @property 
+    def settings(self): 
+        return self.__settings
+
+    @property 
+    def data(self): 
+        return self.__data
+    
     @property
     def number(self):
         return str(self.__unique_number.hex)
