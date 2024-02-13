@@ -19,6 +19,9 @@ class settings_manager(object):
         return cls.instance
     
     def __convert(self):
+        """
+            Метод конверта данных в json
+        """
         if len(self.__data) == 0:
             raise Exception("ERROR: Невозможно создать объект типа settings.py")
         
