@@ -40,6 +40,9 @@ class settings_manager(object):
         self.__unique_number = uuid.uuid4()
 
     def open(self, file_name: str) -> bool:
+        """
+            Метод открытия файла
+        """
         if not isinstance(file_name, str):
             raise Exception("ERROR: Неверный аргумент file_name")
 
