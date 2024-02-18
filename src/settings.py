@@ -1,3 +1,5 @@
+from src.argument_exception import argument_exception
+
 class settings:
     # Инициализируем пустыми
     __first_name = None
@@ -15,7 +17,7 @@ class settings:
     @first_name.setter
     def first_name(self, value: str):
         if not isinstance(value, str):
-            raise Exception("Некорректный аргумент!")
+            raise argument_exception("Некорректный аргумент!")
         
         self.__first_name = value.strip()
         
@@ -27,10 +29,10 @@ class settings:
     @inn.setter
     def inn(self, value: str):
         if not isinstance(value, str):
-            raise Exception("ERROR: Некорректный аргумент!")
+            raise argument_exception("ERROR: Некорректный аргумент!")
         
         if len(value) != 12:
-            raise Exception("ERROR: Длина ИНН не равна 12!")
+            raise argument_exception("ERROR: Длина ИНН не равна 12!")
         
         self.__inn = value.strip()
 
@@ -42,10 +44,10 @@ class settings:
     @cor_account.setter
     def cor_account(self, value: str):
         if not isinstance(value, str):
-            raise Exception("Некорректный аргумент!")
+            raise argument_exception("Некорректный аргумент!")
         
         if len(value) != 11:
-            raise Exception("ERROR: Длина кор. счёта не равна 11!")
+            raise argument_exception("ERROR: Длина кор. счёта не равна 11!")
         
         self.__cor_account = value.strip()
     
@@ -57,10 +59,10 @@ class settings:
     @bik.setter
     def bik(self, value: str):
         if not isinstance(value, str):
-            raise Exception("Некорректный аргумент!")
+            raise argument_exception("Некорректный аргумент!")
         
         if len(value) != 9:
-            raise Exception("ERROR: Длина БИК не равна 9!")
+            raise argument_exception("ERROR: Длина БИК не равна 9!")
         
         self.__bik = value.strip()
 
@@ -72,10 +74,10 @@ class settings:
     @account.setter
     def account(self, value: str):
         if not isinstance(value, str):
-            raise Exception("Некорректный аргумент!")
+            raise argument_exception("Некорректный аргумент!")
 
         if len(value) != 11:
-            raise Exception("ERROR: Длина счёта не равна 11!")
+            raise argument_exception("ERROR: Длина счёта не равна 11!")
         
         self.__account = value.strip()
 
@@ -87,10 +89,10 @@ class settings:
     @name.setter
     def name(self, value: str):
         if not isinstance(value, str):
-            raise Exception("Некорректный аргумент!")
+            raise argument_exception("Некорректный аргумент!")
         
         if str == "":
-            raise Exception("ERROR: Пустое наименование!")
+            raise argument_exception("ERROR: Пустое наименование!")
         
         self.__name = value.strip()
 
@@ -102,9 +104,9 @@ class settings:
     @ownship_type.setter
     def ownship_type(self, value: str):
         if not isinstance(value, str):
-            raise Exception("Некорректный аргумент!")
+            raise argument_exception("Некорректный аргумент!")
         
         if len(value) != 5:
-            raise Exception("ERROR: Длина вида собственности не равна 5!")
+            raise argument_exception("ERROR: Длина вида собственности не равна 5!")
         
         self.__ownship_type = value.strip()
