@@ -1,6 +1,6 @@
 from src.error_proxy import error_proxy
-
-class operation_exception(Exception):
+from src.argument_exception import argument_exception
+class operation_exception(argument_exception):
     __inner_error: error_proxy = error_proxy()
 
     def __init__(self, *args: object) -> None:
