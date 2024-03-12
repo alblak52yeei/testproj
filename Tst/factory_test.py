@@ -2,46 +2,103 @@ from Src.Models.unit_model import unit_model
 from Src.Logics.start_factory import start_factory
 from Src.settings_manager import settings_manager
 from Src.Storage.storage import storage
-from Src.Models.reciepe_row import reciepe_row_model
-from Src.Models.nomenclature_model import nomenclature_model
-from Src.Models.group_model import group_model
-from Src.Logics.start_factory import start_factory
+from Src.Logics.report_factory import report_factory
 
 import unittest
 
+#
+# Набор автотестов для проверки работы фабричного метода
+# 
 class factory_test(unittest.TestCase):
-    def test_check_create_factory(self):
-        unit = unit_model.create_gramm()
 
-        assert unit is not None
-
-    def test_check_nomenclature_group(self):
-        result = start_factory.create_nomenclature();
-
-        print(result)
-        assert len(result) > 0
-
-    def test_check_factory_create_method(self):
+    #
+    # Проверка создания начальных рецептов
+    #    
+    def test_check_create_receipts(self):
+        # Подготовка
+        items = start_factory.create_receipts()
+        
+        # Действие
+        
+        # Проверки
+        assert len(items) > 0     
+        
+    # 
+    # Проверка создание начальной номенклатуры
+    #    
+    def test_check_create_nomenclatures(self):
+        # Подготовка
+        items = start_factory.create_nomenclatures()
+        
+        # действие
+        
+        # Прверки
+        assert len(items) > 0 
+        
+        
+    #
+    # Проверка создание списка единиц измерения
+    #    
+    def test_check_create_units(self):
+        # Подготовка
+        items = start_factory.create_units()
+        
+        # Действие
+        
+        # Проверки
+        assert len(items) > 0    
+     
+    #
+    # Проверка создания списка групп
+    # 
+    def test_check_create_groups(self):
+        # Подготовка
+        items = start_factory.create_groups()
+        
+        # Действие
+        
+        # Проверки    
+        assert len(items) > 0
+        
+        
+    #      
+    # Проверка работы класса start_factory. Метод create
+    #
+    def test_check_factory_create(self):
+        # Подготовка
         manager = settings_manager()
-        factory = start_factory(manager.settings)
-
+        factory = start_factory( manager.settings )
+        
+        
+        # Действие
         result = factory.create()
+        
+        
+        # Проверка
+        if manager.settings.is_first_start == True:
+            assert result == True
+            assert not factory.storage is None
+            assert storage.nomenclature_key in factory.storage.data
+            assert storage.receipt_key in factory.storage.data
+            assert storage.group_key in factory.storage.data
+            assert storage.unit_key in factory.storage.data
+        else:
+            assert result == False    
+        
+                     
+    def test_check_report_factory_create(self):
+        # Подготовка
+        manager = settings_manager()
+        start = start_factory(manager.settings)
+        start.create()
+        factory = report_factory()
+        key = storage.unit_key
 
-        assert len(result) > 0
-        assert factory.storage is not None
-        assert storage.nomenclature_key() in factory.storage.data
-        assert storage.unit_key() in factory.storage.data
-        assert storage.group_key() in factory.storage.data
+        # Действие
+        result = factory.create(manager.settings.report_format, start.storage.data)
 
-    def test_reciepe_row(self):
-        row = reciepe_row_model(
-                nomenculature = nomenclature_model('Пшеничная мука', unit_model.create_kilogramm(), group_model.create_group()),
-                unit=unit_model.create_gramm(),
-                size=100),
+        # Проверки
 
-        assert bool(row) == True
+        assert result is not None
 
-    def test_reciepe(self):
-        data = start_factory.create_reciepes()
 
-        assert data is not None
