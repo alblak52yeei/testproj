@@ -1,12 +1,44 @@
 from Src.reference import reference
+from Src.exceptions import exception_proxy
 
-
+#
+# Модель склада
+#
 class storage_model(reference):
-    __adress: str = ''
+    _address: str = ""
+    
+    def __init__(self, name, address="ул. 2-я Желездодорожная, д. 147"):
+        super().__init__(name)
+        self.address = address
 
-    def __init__(self, adress: str, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.__adress = adress
+    @property
+    def address(self) -> str:
+        """
+            Адрес
 
-    def adress(self) -> str:
-        return self.__adress
+        Returns:
+            _type_: _description_
+        """
+        return self._address
+    
+    @address.setter
+    def address(self, value:str):
+        """
+            Адрес
+        Args:
+            value (str): _description_
+        """
+        exception_proxy.validate(value, str)
+        self._address = value
+        
+    @staticmethod    
+    def create_default() -> reference:
+        """
+            Сформировать склад по умолчанию
+        Returns:
+            reference: _description_
+        """
+        storage = storage_model("default")
+        storage.address = "г. Москва. ул. Академика Королева, 10"
+        
+        return storage    

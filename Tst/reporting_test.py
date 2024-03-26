@@ -7,6 +7,9 @@ from Src.Models.nomenclature_model import nomenclature_model
 from Src.Models.group_model import group_model
 from Src.Logics.markdown_reporting import markdown_reporting
 from Src.Logics.json_reporting import json_reporting
+from Src.Logics.start_factory import start_factory
+from Src.settings import settings
+
 
 class reporting_test(unittest.TestCase):
     
@@ -26,7 +29,45 @@ class reporting_test(unittest.TestCase):
         
         # Проверки
         assert result is not None
-        assert len(result) > 0   
+        assert len(result) > 0 
+        
+    #
+    # Проверить формирование рецептов в формате csv
+    #    
+    def test_check_csv_create_receipe_key(self):
+        # Подготовка
+        optiins = settings()
+        start =   start_factory( optiins )
+        start.create()
+        key = storage.receipt_key()
+        report = csv_reporting( start.storage.data )
+        
+        # Действие
+        result = report.create( key )
+        
+        # Проверки
+        assert result is not None
+        assert len(result) > 0 
+        
+    #
+    # Проверить формирование рецептов в формате Markdown
+    #    
+    def test_check_markdown_create_receipt_key(self):
+        # Подготовка
+        optiins = settings()
+        start =   start_factory( optiins )
+        start.create()
+        key = storage.receipt_key()
+        report = markdown_reporting( start.storage.data )
+        
+        # Действие
+        result = report.create( key )
+        
+        # Проверки
+        assert result is not None
+        assert len(result) > 0 
+            
+        
     
     #
     # Проверить статический метод build класса reporting

@@ -1,30 +1,43 @@
 from Src.Logics.reporting import reporting
+from Src.exceptions import operation_exception
 
+
+#
+# Класс - реализация построение данных в формате csv
+#
 class csv_reporting(reporting):
-    def create(self, key: str) -> str:
-        data = self.data
-        keys = []
+    
+    def create(self, storage_key: str):
+        super().create(storage_key)
+        result = ""
+        delimetr = ";"
 
-        # Получаем список всех атрибутов и проходим по ним
-        attrs = dir(data[key][0]) 
-
-        for attr in attrs:
-            if not attr.startswith("_") or attr.startswith("create_"):
-                keys.append(attr)
-
-        self.fields = keys
-
-        data = self.data[key]
-        headers = "; ".join(self.fields)
-        result = headers + '\n'
+        # Исходные данные
+        items = self.data[ storage_key ]
+        if items == None:
+            raise operation_exception("Невозможно сформировать данные. Данные не заполнены!")
         
-        for element in data:
+        if len(items) == 0:
+            raise operation_exception("Невозможно сформировать данные. Нет данных!")
+        
+        # Заголовок 
+        header = delimetr.join(self.fields)
+        result += f"{header}\n"
+        
+        # Данные
+        for item in items:
             row = ""
-
             for field in self.fields:
-                val = getattr(element, field)
-                row += f"{val}; "
-
-            result += row[:-1] + '\n'
+                attribute = getattr(item.__class__, field)
+                if isinstance(attribute, property):
+                    value = getattr(item, field)
+                    if isinstance(value, (list, dict)) or value is None:
+                        value = ""
+                        
+                    row +=f"{value}{delimetr}"
+                
+            result += f"{row[:-1]}\n"
+            
         
+        # Результат csv
         return result

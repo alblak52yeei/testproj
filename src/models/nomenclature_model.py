@@ -1,13 +1,32 @@
 from Src.reference import reference
 from Src.exceptions import exception_proxy
-from Src.Models.unit_model import unit_model
-from Src.Models.group_model import group_model
+
 
 class nomenclature_model(reference):
     " Группа номенклатуры "
     _group = None
     " Единица измерения "
     _unit = None
+    
+    
+    def __init__(self, name:str, group: reference = None, unit: reference = None):
+        """_summary_
+
+        Args:
+            name (str): Наименование
+            group (reference): Группа
+            unit (reference): Единица измерения
+        """
+        
+        if not group is None:
+            exception_proxy.validate(group, reference)
+            self._group = group
+            
+        if not unit is None:  
+            exception_proxy.validate(unit, reference)  
+            self._unit = unit
+            
+        super().__init__(name)
     
     @property
     def group(self):
@@ -29,9 +48,7 @@ class nomenclature_model(reference):
     def unit(self, value: reference):
         " Единица измерения "
         exception_proxy.validate(value, reference)
-        self._unit = value    
-
-    def __init__(self, name, unit: unit_model = None, group: group_model = None):
-        super().__init__(name)
-        self.unit = unit
-        self.group = group
+        self._unit = value
+        
+  
+    

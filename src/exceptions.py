@@ -38,6 +38,9 @@ class exception_proxy(Exception):
         Returns:
             True или Exception
         """
+        
+        if value is None:
+            raise argument_exception("Пустой аргумент")
 
         # Проверка типа
         if not isinstance(value, type_):
@@ -52,6 +55,8 @@ class exception_proxy(Exception):
 
         return True
      
+   
+         
      
 #
 # Исключение при проверки аргументов

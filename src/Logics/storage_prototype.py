@@ -62,7 +62,7 @@ class storage_prototype(error_proxy):
 
             result.append(item)
 
-        return storage_prototype(result)
+        return storage_prototype(result) 
     
     @property
     def data(self):
