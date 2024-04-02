@@ -63,7 +63,7 @@ class storage_service:
                 raise operation_exception('Не удалось произвести списывание. Недостаточно остатков на складе')
             
             item = storage_row_model("Test")
-            item.nomenclature = turn.nomenclature
+            item.nomenclature = turn.nomenclature 
             item.unit = turn.unit
             item.storage_type = False
             item.value = recipe_need[turn.nomen.name]

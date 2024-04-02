@@ -1,25 +1,38 @@
 from Src.Logics.reporting import reporting
 from Src.exceptions import operation_exception
+from Src.Logics.convert_factory import convert_factory
+
 import json
 
+#
+# Формирование отчета в формате json
+#
 class json_reporting(reporting):
-    def create(self, typeKey: str):
-        super().create(typeKey)
-        result = []
-        # Исходные данные
-        items = self.data[ typeKey ]
+    
+      def create(self, storage_key: str):
+        super().create(storage_key)
+        
+         # Исходные данные
+        items = self.data[ storage_key ]
         if items == None:
             raise operation_exception("Невозможно сформировать данные. Данные не заполнены!")
-
+        
         if len(items) == 0:
             raise operation_exception("Невозможно сформировать данные. Нет данных!")
-
-        data = {}
-        for item in items:
-            for field in self.fields:
-                value = getattr(item, field)
-                data[ field ] = value
-                result.append( data )        
-
-        data = json.dumps( result )
-        return data 
+        
+        # Сериализуем данные
+        factory = convert_factory()
+        data = factory.serialize( items )
+        
+        # Формируем Json
+        result = json.dumps(data, sort_keys = True, indent = 4, ensure_ascii = False)  
+        return result
+      
+      def mimetype(self) -> str:
+          return "application/json; charset=utf-8"     
+                
+        
+        
+        
+    
+    
