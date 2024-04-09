@@ -44,7 +44,6 @@ class factory_test(unittest.TestCase):
         
         # Проверки
         assert report is not None
-        print ( report.create(key) )
  
     #
     # Проверка создания начальных рецептов

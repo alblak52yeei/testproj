@@ -7,7 +7,9 @@ from Src.Logics.start_factory import start_factory
 from datetime import datetime
 from Src.Logics.storage_service import storage_service
 from Src.Models.nomenclature_model import nomenclature_model
+from Src.Logics.nomenclature_service import nomenclature_service
 
+import json
 
 app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False
@@ -105,5 +107,87 @@ def set_work_mode():
     except Exception as ex:
         return error_proxy.create_error_response(app, f"Ошибка обработки: {ex}")
     
+@app.route("/api/settings/change_block_period", methods=["GET"])
+def change_block_period():
+    args = request.args
+
+    if "block_period" not in args.keys():
+        return error_proxy.create_error_response(app, "Необходимо передать параметр: block_period!")
+
+    try:
+        manager = settings_manager()
+        manager.settings.block_period = datetime.strptime(args["block_period"], "%Y-%m-%d")
+        manager.save()
+
+        return storage.create_object_response(app, manager.settings)
+    except Exception as ex:
+        return error_proxy.create_error_response(app, f"Ошибка обработки: {ex}")
+    
+@app.route("/api/nomenclature/<nomenclature_id>", methods=["GET"])
+def get_nomenclature(nomenclature_id):
+    try:
+        service = nomenclature_service()
+        nomenclature = service.get(nomenclature_id)
+
+        if not nomenclature:
+            return error_proxy.create_error_response(app, "Такой номенклатуры не существует")
+        
+        return storage.create_object_response(app, nomenclature)
+
+    except Exception as ex:
+        return error_proxy.create_error_response(app, f"Ошибка обработки: {ex}")
+    
+@app.route("/api/nomenclature/<nomenclature_id>", methods=["PUT"])
+def put_nomenclature(nomenclature_id):
+    data = request.json
+
+    try:
+        nomenclature = nomenclature_model().load(data)
+
+        service = nomenclature_service()
+        result = service.add(nomenclature)
+
+        if result:
+            return storage.create_response(app, "ok")
+        
+        return error_proxy.create_error_response(app, "Ошибка добавления")
+    except Exception as ex:
+        return error_proxy.create_error_response(app, f"Ошибка обработки: {ex}")
+    
+@app.route("/api/nomenclature/<nomenclature_id>", methods=["PATCH"])
+def patch_nomenclature(nomenclature_id):
+    data = request.json
+
+    try:
+        nomenclature = nomenclature_model().load(data)
+
+        service = nomenclature_service()
+        result = service.change(nomenclature)
+
+        if result:
+            return storage.create_response(app, "ok")
+        
+        return error_proxy.create_error_response(app, "Ошибка изменения")
+    except Exception as ex:
+        return error_proxy.create_error_response(app, f"Ошибка обработки: {ex}")
+    
+@app.route("/api/nomenclature/<nomenclature_id>", methods=["DELETE"])
+def delete_nomenclature(nomenclature_id):
+    data = request.json
+
+    try:
+        nomenclature = nomenclature_model().load(data)
+
+        service = nomenclature_service()
+        result = service.delete(nomenclature)
+
+        if result:
+            return storage.create_response(app, "ok")
+        
+        return error_proxy.create_error_response(app, "Ошибка удаления")
+    except Exception as ex:
+        return error_proxy.create_error_response(app, f"Ошибка обработки: {ex}")
+    
 if __name__ == "__main__":
     app.run(debug = True)
+    

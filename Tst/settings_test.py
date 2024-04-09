@@ -20,8 +20,7 @@ class settings_test(unittest.TestCase):
         result = manager.data
 
         # Проверки
-        print(manager.data)
-        print(type(manager.data))
+
         assert result is not None
         assert manager.settings.inn > 0
         assert manager.settings.short_name != ""
@@ -37,8 +36,7 @@ class settings_test(unittest.TestCase):
         # Действие
         
         # Проверки
-        print(manager1._uniqueNumber)
-        print(manager2._uniqueNumber)
+
         assert manager1._uniqueNumber == manager2._uniqueNumber
         
     #
