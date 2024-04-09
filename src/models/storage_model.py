@@ -1,5 +1,5 @@
 from Src.reference import reference
-from Src.exceptions import exception_proxy
+from Src.exceptions import exception_proxy, operation_exception
 
 #
 # Модель склада
@@ -7,10 +7,6 @@ from Src.exceptions import exception_proxy
 class storage_model(reference):
     _address: str = ""
     
-    def __init__(self, name, address="ул. 2-я Желездодорожная, д. 147"):
-        super().__init__(name)
-        self.address = address
-
     @property
     def address(self) -> str:
         """
@@ -31,6 +27,26 @@ class storage_model(reference):
         exception_proxy.validate(value, str)
         self._address = value
         
+         
+    def load(self, source: dict):
+        """
+            Десериализовать свойства 
+        Args:
+            source (dict): исходный слова
+        """
+        if source is None:
+            return None
+        super().load(source)
+        
+        source_fields = ["address"]
+        if set(source_fields).issubset(list(source.keys())) == False:
+            raise operation_exception(f"Невозможно загрузить данные в объект {source}!")
+        
+        self._address = source["address"]
+        return self
+        
+    # Фабричные методы
+        
     @staticmethod    
     def create_default() -> reference:
         """
@@ -42,3 +58,4 @@ class storage_model(reference):
         storage.address = "г. Москва. ул. Академика Королева, 10"
         
         return storage    
+   
