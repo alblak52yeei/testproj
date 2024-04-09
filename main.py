@@ -90,5 +90,20 @@ def get_turns_nomenclature(nomenclature_id):
     result = storage_service.create_response( data, app )
     return result      
 
+@app.route("/api/system/mode", methods=["GET"])
+def set_work_mode():
+    args = request.args
+
+    if "first_start" not in args.keys():
+        return error_proxy.create_error_response(app, "Необходимо передать параметры: first_start!")
+
+    try:
+        options.settings.is_first_start = args["first_start"]
+        start.storage.save()
+        
+        return storage.create_response(app, "ok")
+    except Exception as ex:
+        return error_proxy.create_error_response(app, f"Ошибка обработки: {ex}")
+    
 if __name__ == "__main__":
     app.run(debug = True)
