@@ -78,7 +78,8 @@ class start_factory:
         items = [ {"Мука пшеничная": "киллограмм"}, 
                   {"Сахар":"киллограмм"}, 
                   {"Сливочное масло" : "киллограмм"}, 
-                  {"Яйца": "штука"}, {"Ванилин": "грамм"}, 
+                  {"Яйца": "штука"}, 
+                  {"Ванилин": "грамм"}, 
                   {"Куринное филе": "киллограмм"}, 
                   {"Салат Романо": "грамм"},
                   {"Сыр Пармезан" : "киллограмм"}, 
@@ -88,7 +89,8 @@ class start_factory:
                   {"Оливковое масло": "литр"}, 
                   {"Лимонный сок": "литр"},
                   {"Горчица дижонская": "грамм"},
-                  {"Сахарная пудра": "грамм"},{"Ванилиин": "грамм"},
+                  {"Сахарная пудра": "грамм"},
+                  {"Ванилиин": "грамм"},
                   {"Корица": "грамм"},
                   {"Какао": "киллограмм"}]
         
@@ -144,8 +146,7 @@ class start_factory:
         Returns:
             _type_: Массив объектов receipe_model
         """
-        result = []
-        
+        result = []        
         if _data is None:
             data = start_factory.create_nomenclatures()
         else:
@@ -155,8 +156,8 @@ class start_factory:
             raise argument_exception("Некорректно переданы параметры! Список номенклатуры пуст.")        
         
         # Вафли хрустящие в вафильнице
-        items = [ {"Мука пшеничная": 100}, {"Сахар": 80}, {"Сливочное масло": 70},
-                  {"Яйца": 1} , {"Ванилин": 5 }
+        items = [ ("Мука пшеничная",  100), ("Сахар",  80), ("Сливочное масло", 70),
+                  ("Яйца", 1)
                 ]
         item = receipe_model.create_receipt("Вафли хрустящие в вафильнице", "", items, data)
         
@@ -172,26 +173,16 @@ class start_factory:
         result.append( item )
         
         # Цезарь с курицей
-        items = [ {"Куринное филе": 200}, {"Салат Романо": 50}, {"Сыр Пармезан": 50},
-                  {"Чеснок": 10} , {"Белый хлеб": 30 }, {"Соль": 5}, {"Черный перец": 2},
-                  {"Оливковое масло": 10}, {"Лимонный сок": 5}, {"Горчица дижонская": 5},
-                  {"Яйца": 2}
+        items = [ ("Куринное филе", 200), ("Салат Романо", 50), ("Сыр Пармезан", 50),
+                  ("Чеснок", 10) , ("Белый хлеб", 30 ), ("Соль", 5), ("Черный перец", 2),
+                  ("Оливковое масло", 10), ("Лимонный сок", 5), ("Горчица дижонская", 5),
+                  ("Яйца", 2)
                 ]
         item =  receipe_model.create_receipt("Цезарь с курицей", "", items, data)
-        item.instructions.extend([
-            "Нарезать куриное филе кубиками, нарубите чеснок, нарежьте хлеб на кубики."
-            "Очистить салат и обсушить его."
-            "Натереть сыр Пармезан на терке."
-            "Обжарить на сковороде куриное филе с чесноком до готовности."
-            "На той же сковородке обжарьить кубики хлеба до золотистости."
-            "В миске смешайте оливковое масло, лимонный сок, горчицу, измельченный чеснок, соль и перец."
-            "В большой миске смешайте кубики курицы, хлеба, листья салата."
-            "Добавить заправку и тщательно перемешать"])
-            
         result.append(item)
         
         # Безе
-        items = [ {"Яйца": 3}, {"Сахарная пудра":180}, {"Ванилиин" : 5}, {"Корица": 5} ,{"Какао": 20} ]
+        items = [ ("Яйца", 3), ("Сахарная пудра", 180), ("Ванилиин" , 5), ("Корица", 5) ,("Какао", 20) ]
         result.append( receipe_model.create_receipt("Безе", "", items, data))
         return result
         
@@ -208,40 +199,38 @@ class start_factory:
         if len(data.keys()) == 0:
             raise operation_exception("Набор данных пуст. Невозможно сформировать список транзакций!")  
         
-        items = [ { "Мука пшеничная": [1, "киллограмм"] }, 
-                  { "Черный перец": [50, "грамм" ] },
-                  { "Сахар" :[0.5, "киллограмм"] },
-                  { "Яйца": [6,"штука" ] },
-                  { "Оливковое масло": [0.2,"литр" ] },
-                  { "Куринное филе": [0.5, "киллограмм"] },
-                  { "Салат Романо": [1, "штука"] },
-                  { "Белый хлеб" : [3, "штука"] },
-                  { "Сыр Пармезан": [0.2, "киллограмм" ] },
-                  { "Горчица дижонская" : [0.1, "литр"] },
-                  { "Черный перец": [10, "грамм" ] },
-                  { "Лимонный сок": [1, "литр"] },
-                  { "Какао": [1,"киллограмм"] },
-                  { "Сыр Пармезан": [0.3, "киллограмм" ] },
-                  { "Ванилиин": [100, "грамм"] }  ]
+        items = [ ( "Мука пшеничная", 1, "киллограмм") , 
+                  ( "Черный перец", 50, "грамм" ),
+                  ( "Сахар" , 0.5, "киллограмм"),
+                  ( "Яйца", 6,"штука" ),
+                  ( "Оливковое масло", 0.2, "литр" ),
+                  ( "Куринное филе" ,0.5, "киллограмм"),
+                  ( "Салат Романо", 1, "штука" ),
+                  ( "Белый хлеб" , 3, "штука" ),
+                  ( "Сыр Пармезан", 0.2, "киллограмм") ,
+                  ( "Горчица дижонская" ,0.1, "литр" ),
+                  ( "Черный перец", 10, "грамм" ),
+                  ( "Лимонный сок", 1, "литр" ),
+                  ( "Какао" ,1,"киллограмм"),
+                  ( "Сливочное масло" ,0.5, "киллограмм" ),
+                  ( "Сыр Пармезан", 0.3, "киллограмм") ,
+                  ( "Ванилиин", 100, "грамм" ),
+                  ( "Соль", 1, "киллограмм" )
+                  ]
         
         for element in items:
-            key = list(element.keys())[0]
-            values = list(element.values())[0]
+            if len(element) < 3:
+                raise operation_exception("Некорректно сформирован список для генерации рецептов!")
             
-            row = storage_row_model.create_credit_row(key, values, data, default_storage)
+            nomenclature_name = element[0]
+            quantity =  element[1]
+            unit_name = element[2]
+            
+            row = storage_row_model.create_credit_row(nomenclature_name, quantity, unit_name , data, default_storage)
             result.append(row)
         
         return result
         
-    @staticmethod
-    def create_storages():
-        storages = []
-        
-        # Добавляем в список складов два склада
-        storages.append(storage_model('Первый склад', 'ул. Советская, д. 31'))
-        storages.append(storage_model('Второй склад', 'ул. Карла Либкнехта, д. 128'))
-        
-        return storages
     
     # Основной метод
     def create(self) -> bool:
@@ -250,45 +239,50 @@ class start_factory:
         Returns:
             _type_: _description_
         """
-        if self.__oprions.is_first_start == True:
-            # 1. Формируем и зпоминаем номеклатуру
-            nomenclatures = start_factory.create_nomenclatures()
-            self.__save( storage.nomenclature_key(), nomenclatures )
-            
-            # 2. Формируем и запоминаем рецепты
-            items = start_factory.create_receipts(nomenclatures)
-            self.__save( storage.receipt_key(), items)
-      
-            # 3. Формируем и запоминаем единицы измерения
-            items = start_factory.create_units()
-            self.__save( storage.unit_key(), items)
-            
-            # 4. Формируем и запоминаем группы номенклатуры
-            items = start_factory.create_groups()
-            self.__save( storage.group_key(), items)
-            
-            # 5. Формируем типовые складские проводки
-            items = start_factory.create_storage_transactions( self.storage.data )
-            self.__save( storage.storage_transaction_key(), items)
-            
-            # 6. Формируем склады
-            items = start_factory.create_storages()
-            self.__save( storage.storages_key(), items)
 
-            return True
-           
-           
+        if self.__storage == None:
+            self.__storage = storage()
+
+        if self.__oprions.is_first_start == True:
+
+            try:
+                # 1. Формируем и зпоминаем номеклатуру
+                nomenclatures = start_factory.create_nomenclatures()
+                self.__save( storage.nomenclature_key(), nomenclatures )
+                    
+                # 2. Формируем и запоминаем рецепты
+                items = start_factory.create_receipts(nomenclatures)
+                self.__save( storage.receipt_key(), items)
+            
+                # 3. Формируем и запоминаем единицы измерения
+                items = start_factory.create_units()
+                self.__save( storage.unit_key(), items)
+                    
+                # 4. Формируем и запоминаем группы номенклатуры
+                items = start_factory.create_groups()
+                self.__save( storage.group_key(), items)
+                    
+                # 5. Формируем типовые складские проводки
+                items = start_factory.create_storage_transactions( self.storage.data )
+                self.__save( storage.storage_transaction_key(), items)
+            
+            except Exception as ex:
+                raise operation_exception(f"Ошибка при формировании шаблонных данных!\n{ex}")        
+                    
         else:
             # Другой вариант. Загрузка из источника данных    
-            return False
+            try:
+                self.__storage.load()
+            except Exception as ex:
+                raise operation_exception(f"Ошибка при формировании шаблонных данных!\n{ex}")     
+
+            
+        
+            
+            
+            
+            
         
         
-    
         
         
-        
-        
-    
-    
-    
-    

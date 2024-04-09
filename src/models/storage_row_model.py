@@ -25,7 +25,8 @@ class storage_row_model(reference):
     _unit: unit_model = None
     # Значение
     _value: float = 0
-
+    
+    
     @property
     def value(self) -> float:
         """
@@ -83,6 +84,7 @@ class storage_row_model(reference):
         """
         return self._unit
     
+    @unit.setter
     def unit(self, value: unit_model) -> unit_model:
         """
             Единица измерения
@@ -95,7 +97,7 @@ class storage_row_model(reference):
         exception_proxy.validate(value, unit_model)
         self._unit = value
     
-        
+    @property    
     def storage(self) -> storage_model:
         """
             Склад
@@ -104,6 +106,7 @@ class storage_row_model(reference):
         """
         return self._storage
     
+    @storage.setter
     def storage(self, value: storage_model) -> storage_model:
         """
             Склад
@@ -164,14 +167,41 @@ class storage_row_model(reference):
         exception_proxy.validate(value, datetime)
         self._period = value
         
+        
+    def load(self, source: dict):
+        """
+            Десериализовать свойства 
+        Args:
+            source (dict): исходный слова
+        """
+        if source is None:
+            return None
+        super().load(source)
+        
+        source_fields = ["period", "storage_type",  "nomenclature", "value", "unit", "storage"  ]
+        if set(source_fields).issubset(list(source.keys())) == False:
+            raise operation_exception(f"Невозможно загрузить данные в объект {source}!")   
+        
+        self._value = source["value"]
+        self._period =  datetime.strptime(source["period"], "%Y-%m-%d")
+        self._nomenclature = nomenclature_model().load( source["nomenclature"])
+        self._storage = storage_model().load( source["storage"] )
+        self._unit = unit_model().load( source["unit"])
+        self._storage_type = source["storage_type"]
+        
+        return self
+        
+    # Фабричные методы    
+        
     @staticmethod    
-    def create_credit_row(nomenclature_name: str, details: list, data: dict, _storage: storage_model) -> reference:
+    def create_credit_row(nomenclature_name: str, quantity, unit_name: str, data: dict, _storage: storage_model) -> reference:
         """
             Фабричный метод для создания транзакции на поступление
-            Используется в start_factoryu
+            Используется в start_factory
         Args:
             nomenclature_name (str): Наименование номенклатуры
-            details (list): список типа [0.1, "литр"] 
+            quantity(int, float): Количество
+            unit_name (str): Наименование единицы измерения
             data (dict): исходный набор данных
             storage(storage_model): склад
         Returns:
@@ -179,38 +209,22 @@ class storage_row_model(reference):
         """
         exception_proxy.validate(nomenclature_name, str)
         exception_proxy.validate(_storage, storage_model)
-        if details is None:
-            raise argument_exception("Некорректно переданы параметры!")
-        
-        if len(details) < 2:
-            raise argument_exception("Некорректно переданы параметры!")
-        
-        quantity = details[0]
-        unit_name = details[1]
-        exception_proxy.validate(quantity, (float, int))
+        exception_proxy.validate(quantity, (int, float))
         exception_proxy.validate(unit_name, str)
         
-        # Подготовим словарь со списком номенклатуры
+        
+        # Определим номенклатуру
         items = data[ storage.nomenclature_key() ]    
         nomenclatures = reference.create_dictionary(items)
-        
-        # Определеяем номенклатуру
-        keys = list(filter(lambda x: x == nomenclature_name, nomenclatures.keys() ))
-        if len(keys) == 0:
-            raise operation_exception(f"Некоректно передан список. Не найдена номенклатура {nomenclature_name}!")
-        nomenclature = nomenclatures[keys[0]]    
-        
+        nomenclature = nomenclature_model.get( nomenclature_name, nomenclatures)
+
+        # Определяем единицу измерения
         items = data[ storage.unit_key()]
         units = reference.create_dictionary(items)
+        unit = unit_model.get(unit_name, units )
         
-        # Определяем единицу измерения
-        keys = list(filter(lambda x: x == unit_name, units.keys() ))
-        if len(keys) == 0:
-            raise operation_exception(f"Некорректно передан список. Не найдена единица измерения {unit_name}!")
-        unit = units[keys[0]]
-        
-        start_date = datetime.strptime('2024-01-01', '%Y-%m-%d')
-        stop_date = datetime.strptime('2024-02-01', '%Y-%m-%d')
+        start_date = datetime.strptime("2024-01-01", "%Y-%m-%d")
+        stop_date = datetime.strptime("2024-02-01", "%Y-%m-%d")
 
         # Создаем транзакцию
         item = storage_row_model("sample_credit_transaction")

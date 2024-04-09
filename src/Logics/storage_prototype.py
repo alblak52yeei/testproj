@@ -1,69 +1,98 @@
-from Src.exceptions import argument_exception
+from Src.exceptions import argument_exception, exception_proxy
 from Src.errors import error_proxy
-from Src.Models.nomenclature_model import nomenclature_model
-from Src.Models.receipe_model import receipe_model
-from Src.Models.storage_model import storage_model
 from datetime import datetime
+from Src.Models.nomenclature_model import nomenclature_model
 
+#
+# Прототип для обработки складских транзакций
+#
 class storage_prototype(error_proxy):
     __data = []
-
+    
     def __init__(self, data: list) -> None:
-        if len(data) == 0:
-            self.error = "Некорректно передана data"
+        if len(data) <= 0:
+            self.error = "Набор данных пуст!"
         
+        exception_proxy.validate(data, list)
         self.__data = data
+        self.clear()
 
-    def filter_date(self, start_period: datetime, stop_period: datetime):
+    # Методы фильтрации
+
+    def filter_by_period( self,start_period: datetime, stop_period: datetime  ):
+        """
+            Отфильтровать по периоду
+        Args:
+            start_period (datetime): начало
+            stop_period (datetime): окончание
+
+        Returns:
+            storage_prototype: _description_
+        """
+        self.clear()
+        
+        exception_proxy.validate(start_period, datetime)
+        exception_proxy.validate(stop_period, datetime)
+        if len(self.__data) <= 0:
+            self.error = "Некорректно переданы параметры!"
+            
         if start_period > stop_period:
-            self.error = "Некорректный период"
-
+            self.error = "Некорректный период!"
+            
+         
         if not self.is_empty:
             return self.__data
         
         result = []
-
         for item in self.__data:
             if item.period > start_period and item.period <= stop_period:
                 result.append(item)
-
-        return storage_prototype(result)
+                
+        return   storage_prototype( result )
     
-    def filter_nomenclature(self, nomenclature: nomenclature_model):
-        if not isinstance(nomenclature, nomenclature_model):
-            self.error = "Некорректная номенклатура"
+    
+    def filter_by_nomenclature(self, nomenclature:  nomenclature_model):
+        """
+            Отфильтровать по номенклатуре
+        Args:
+            nomenclature (nomenclature_model): _description_
 
-        if not self.is_empty:
-            return self.__data
+        Returns:
+            storage_prototype: _description_
+        """
+        self.clear()
+        
+        exception_proxy.validate(nomenclature, nomenclature_model)
         
         result = []
-
         for item in self.__data:
-            if item.nomenclature == nomenclature:
+            if item.nomenclature.id == nomenclature.id:
                 result.append(item)
-
-        return storage_prototype(result)
-    
-    def filter_storage(self, filter_model: storage_model):
-        result = []
-
-        for item in self.data:
-            if item.storage.name != filter_model.name: continue
-            result.append(item)
-
-        return storage_prototype(result)
-    
-    def filter_recipe(self, filter_model: receipe_model):
-        recipe_nomens = set([nomenclature.name for nomenclature in filter_model.rows.values()])
-        result = []
-
-        for item in self.data:
-            if item.nomenculature.name not in recipe_nomens: continue
-
-            result.append(item)
-
-        return storage_prototype(result) 
+                
+        return   storage_prototype( result )
+        
+    # Методы фильтрации    
     
     @property
     def data(self):
-        return self.__data
+        """
+            Полученные данные
+        Returns:
+            _type_: _description_
+        """
+        return self.__data         
+                
+    @data.setter            
+    def data(self, value: list):
+        """
+            Исходные данные
+        Args:
+            value (list): _description_
+        """
+        exception_proxy.validate(value, list)
+        self.__data = value            
+                   
+            
+            
+        
+    
