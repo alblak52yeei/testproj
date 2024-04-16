@@ -1,7 +1,7 @@
 import json
 import os
 
-from Src.exceptions import operation_exception
+from Src.exceptions import operation_exception, exception_proxy
 from Src.Logics.convert_factory import convert_factory
 from Src.reference import reference
 
@@ -86,6 +86,32 @@ class storage():
         return False    
 
  
+    def save_blocked_turns(self, turns:list):
+        """
+            Сохранить новый список заблокированных оборотов
+        """        
+        exception_proxy.validate(turns, list)
+        if len(turns) > 0:
+            self.__data[ storage.blocked_turns_key() ] = turns
+            
+            
+    @staticmethod        
+    def  save_blocked_turns(turns:list):
+        """
+            Сохранить новый список заблокированных оборотов (статический вызов)
+        """       
+        object = storage()
+        object.save_blocked_turns(turns) 
+        
+    @staticmethod
+    def blocked_turns_key():
+        """
+            Ключ для хранения заблокированных оборотов
+        Returns:
+            _type_: _description_
+        """
+        return "storage_row_turn_model"    
+ 
     @staticmethod
     def nomenclature_key():
         """
@@ -101,7 +127,7 @@ class storage():
         """
             Списк номенклатурных групп
         Returns:
-            _type_: _description__block_period
+            _type_: _description_
         """
         return "group_model"
       
@@ -150,29 +176,21 @@ class storage():
                 keys.append(method())
         return keys
     
-    @staticmethod
-    def create_response(app, message: str):
-        json_text = json.dumps({"details": message}, sort_keys=True, indent=4, ensure_ascii=0)
 
+    def Ok( app):
+        """"
+            Сформировать данные для сервера
+        """
+        if app is None:
+            raise operation_exception("Некорректно переданы параметры!")
+
+        json_text = json.dumps({"status" : "ok"}, sort_keys = True, indent = 4,  ensure_ascii = False)  
+
+        # Подготовить ответ    
         result = app.response_class(
-            response=f"{json_text}",
-            status=200,
-            mimetype="application/json; charset=utf.8"
+            response =   f"{json_text}",
+            status = 200,
+            mimetype = "application/json; charset=utf-8"
         )
-
-        return result
-    
-    @staticmethod
-    def create_object_response(app, data):
-        factory = convert_factory()
-
-        data = factory.serialize( data )
-        json_text = json.dumps(data, sort_keys = True, indent = 4, ensure_ascii = False)  
-                
-        result = app.response_class(
-            response=f"{json_text}",
-            status=200,
-            mimetype="application/json; charset=utf.8"
-        )
-
+        
         return result
