@@ -4,8 +4,9 @@ import os
 from Src.exceptions import operation_exception, exception_proxy
 from Src.Logics.convert_factory import convert_factory
 from Src.reference import reference
-
-
+from Src.Models.event_type import event_type
+from Src.Models.nomenclature_model import nomenclature_model
+from Src.Logics.storage_observer import storage_observer
 #
 # Класс хранилище данных
 #
@@ -99,7 +100,7 @@ class storage():
         exception_proxy.validate(turns, list)
         if len(turns) > 0:
             self.__data[ storage.blocked_turns_key() ] = turns
-            self.save()
+            #self.save()
             
             
     @staticmethod

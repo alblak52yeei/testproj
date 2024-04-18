@@ -9,7 +9,7 @@ class storage_observer:
     observers = []
     
     @staticmethod
-    def raise_event(handle_event: str):
+    def raise_event(handle_event: str, arg = None):
         """
             Сформировать события
         Args:
@@ -19,6 +19,6 @@ class storage_observer:
         for object in storage_observer.observers:
             
             if object is not None:
-                object.handle_event(handle_event)
+                object.handle_event(handle_event, arg)
     
     
