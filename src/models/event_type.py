@@ -14,7 +14,6 @@ class event_type(reference):
             str: _description_
         """
         return "changed_block_period"
-
     @staticmethod
     def deleted_nomenclature() -> str:
         """

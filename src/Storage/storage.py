@@ -1,12 +1,11 @@
 import json
 import os
-
+from Src.Logics.storage_service import storage_service
 from Src.exceptions import operation_exception, exception_proxy
 from Src.Logics.convert_factory import convert_factory
 from Src.reference import reference
 from Src.Models.event_type import event_type
-from Src.Models.nomenclature_model import nomenclature_model
-from Src.Logics.storage_observer import storage_observer
+
 #
 # Класс хранилище данных
 #
@@ -49,7 +48,7 @@ class storage():
             if not os.path.exists(data_file):
                 raise operation_exception(f"Невозможно загрузить данные! Не найден файл {data_file}")
 
-            with open(data_file, "r") as read_file:
+            with open(data_file, "r",encoding="unicode_escape") as read_file:
                 source =  json.load(read_file)   
                 
                 self.__data = {}
@@ -81,7 +80,7 @@ class storage():
 
         try:
             factory = convert_factory()
-            with open(data_file, "w") as write_file:
+            with open(data_file, "w",encoding='unicode_escape') as write_file:
                 data = factory.serialize( self.data )
                 json_text = json.dumps(data, sort_keys = True, indent = 4, ensure_ascii = False)  
                 write_file.write(json_text)
@@ -100,7 +99,7 @@ class storage():
         exception_proxy.validate(turns, list)
         if len(turns) > 0:
             self.__data[ storage.blocked_turns_key() ] = turns
-            #self.save()
+            self.save()
             
             
     @staticmethod
@@ -194,3 +193,13 @@ class storage():
         )
         
         return result
+    def handle_event(self, handle_type: str):
+        """
+            Обработать событие
+        Args:
+            handle_type (str): _description_
+        """
+        super().handle_event(handle_type)
+        
+        if handle_type == event_type.changed_block_period():
+            self.__build_blocked_turns()

@@ -1,24 +1,22 @@
 from Src.Models.event_type import event_type
-from Src.exceptions import exception_proxy
-
-
+from Src.exceptions import argument_exception
 #
 # Наблюдатель для складских операций
 #
 class storage_observer:
     observers = []
-    
+
     @staticmethod
-    def raise_event(handle_event: str, arg = None):
+    def raise_event(handle_event: str):
         """
             Сформировать события
         Args:
             handle_event (str): _description_
         """
-        exception_proxy.validate(handle_event, str)
+        if not isinstance(handle_event,str):
+            raise argument_exception("Неверный тип аргумента")
+
         for object in storage_observer.observers:
-            
+
             if object is not None:
-                object.handle_event(handle_event, arg)
-    
-    
+                object.handle_event(handle_event)

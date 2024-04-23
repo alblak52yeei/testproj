@@ -3,9 +3,7 @@ from Src.exceptions import exception_proxy, operation_exception
 from Src.reference import reference
 from Src.Logics.storage_observer import storage_observer
 from Src.Models.event_type import event_type
-#
-# Сервис для выполнения CRUD операций
-#
+
 class reference_service(service):
 
     def __init__(self, data: list) -> None:
@@ -34,8 +32,7 @@ class reference_service(service):
             return False
         
         self.data.remove(found[0])
-        print("DELETE")
-        storage_observer().raise_event(event_type.deleted_nomenclature(), item)
+        storage_observer().raise_event(event_type.deleted_nomenclature())
         return True
 
     def change(self, item:reference) -> bool:
@@ -68,13 +65,13 @@ class reference_service(service):
         
         return found
     
-    def handle_event(self, handle_type: str, arg = None):
+    def handle_event(self, handle_type: str):
         """
             Обработать событие
         Args:
             handle_type (str): _description_
         """
-        super().handle_event(handle_type, arg)
+        super().handle_event(handle_type)
 
 
 
