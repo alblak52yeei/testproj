@@ -2,7 +2,7 @@ from Src.exceptions import exception_proxy, argument_exception
 from Src.Logics.storage_observer import storage_observer
 from Src.Models.event_type import event_type
 from datetime import datetime
-from Src.Logics.storage_service import storage_service
+
 #
 # Класс для описания настроек
 #

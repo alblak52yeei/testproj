@@ -2,7 +2,7 @@
     "group_model": [
         {
             "description": "",
-            "id": "44298be97ad7482497f6fc8d6deb0808",
+            "id": "c83f818c98f6460ca9e6a94ac7198598",
             "is_error": true,
             "name": "Ингредиенты"
         }
@@ -12,38 +12,11 @@
             "description": "",
             "group": {
                 "description": "",
-                "id": "18277c4705764bf0893dbd49f2930c34",
+                "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                 "is_error": true,
                 "name": "Ингредиенты"
             },
-            "id": "5c16c9c869c944ca81571f6cf70a790d",
-            "is_error": true,
-            "name": "Мука пшеничная",
-            "unit": {
-                "base_unit": {
-                    "base_unit": null,
-                    "coefficient": 1,
-                    "description": "",
-                    "id": "5f73f137f82f4d7eb2d529a83b54b982",
-                    "is_error": true,
-                    "name": "грамм"
-                },
-                "coefficient": 1000,
-                "description": "",
-                "id": "1bed8c4830a64ab987692730fb43e84c",
-                "is_error": true,
-                "name": "киллограмм"
-            }
-        },
-        {
-            "description": "",
-            "group": {
-                "description": "",
-                "id": "18277c4705764bf0893dbd49f2930c34",
-                "is_error": true,
-                "name": "Ингредиенты"
-            },
-            "id": "e787ff8a837d40418f9121f1272616ab",
+            "id": "8da309f875604bef9cdfab1aefb831dd",
             "is_error": true,
             "name": "Сахар",
             "unit": {
@@ -51,13 +24,13 @@
                     "base_unit": null,
                     "coefficient": 1,
                     "description": "",
-                    "id": "5f73f137f82f4d7eb2d529a83b54b982",
+                    "id": "fadecbe67f34430da6ae5ea1dcbadaff",
                     "is_error": true,
                     "name": "грамм"
                 },
                 "coefficient": 1000,
                 "description": "",
-                "id": "1bed8c4830a64ab987692730fb43e84c",
+                "id": "fb04660c9c54435dbf0303cbb17b9deb",
                 "is_error": true,
                 "name": "киллограмм"
             }
@@ -66,11 +39,11 @@
             "description": "",
             "group": {
                 "description": "",
-                "id": "18277c4705764bf0893dbd49f2930c34",
+                "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                 "is_error": true,
                 "name": "Ингредиенты"
             },
-            "id": "998f959f17704d85b0fad15936283032",
+            "id": "b7a1a39f67d1417aa9aa02d0267ad564",
             "is_error": true,
             "name": "Сливочное масло",
             "unit": {
@@ -78,13 +51,13 @@
                     "base_unit": null,
                     "coefficient": 1,
                     "description": "",
-                    "id": "5f73f137f82f4d7eb2d529a83b54b982",
+                    "id": "fadecbe67f34430da6ae5ea1dcbadaff",
                     "is_error": true,
                     "name": "грамм"
                 },
                 "coefficient": 1000,
                 "description": "",
-                "id": "1bed8c4830a64ab987692730fb43e84c",
+                "id": "fb04660c9c54435dbf0303cbb17b9deb",
                 "is_error": true,
                 "name": "киллограмм"
             }
@@ -93,18 +66,18 @@
             "description": "",
             "group": {
                 "description": "",
-                "id": "18277c4705764bf0893dbd49f2930c34",
+                "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                 "is_error": true,
                 "name": "Ингредиенты"
             },
-            "id": "8beba2f92e754eeda776859bc197af39",
+            "id": "ca99006c549d400583812f29cde53262",
             "is_error": true,
             "name": "Яйца",
             "unit": {
                 "base_unit": null,
                 "coefficient": 1,
                 "description": "",
-                "id": "f1a87af30e0c4faca9c3184050b3e370",
+                "id": "93f03cb6206d44539887c2c299d668aa",
                 "is_error": true,
                 "name": "штука"
             }
@@ -113,18 +86,18 @@
             "description": "",
             "group": {
                 "description": "",
-                "id": "18277c4705764bf0893dbd49f2930c34",
+                "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                 "is_error": true,
                 "name": "Ингредиенты"
             },
-            "id": "11456b73dc1c4620b9387016648509b9",
+            "id": "500b6a69510e45c3a8ad0ae12ed5da46",
             "is_error": true,
             "name": "Ванилин",
             "unit": {
                 "base_unit": null,
                 "coefficient": 1,
                 "description": "",
-                "id": "4e2440552fd04af4b7d3df1031b2aedd",
+                "id": "ab7a514f98ab49f39d80cbc9b58ae083",
                 "is_error": true,
                 "name": "грамм"
             }
@@ -133,11 +106,11 @@
             "description": "",
             "group": {
                 "description": "",
-                "id": "18277c4705764bf0893dbd49f2930c34",
+                "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                 "is_error": true,
                 "name": "Ингредиенты"
             },
-            "id": "6a448c9b996646888ace90ed26a7547b",
+            "id": "3dd3920f3fcb4311bd42ffc743ca7205",
             "is_error": true,
             "name": "Куринное филе",
             "unit": {
@@ -145,13 +118,13 @@
                     "base_unit": null,
                     "coefficient": 1,
                     "description": "",
-                    "id": "5f73f137f82f4d7eb2d529a83b54b982",
+                    "id": "fadecbe67f34430da6ae5ea1dcbadaff",
                     "is_error": true,
                     "name": "грамм"
                 },
                 "coefficient": 1000,
                 "description": "",
-                "id": "1bed8c4830a64ab987692730fb43e84c",
+                "id": "fb04660c9c54435dbf0303cbb17b9deb",
                 "is_error": true,
                 "name": "киллограмм"
             }
@@ -160,18 +133,18 @@
             "description": "",
             "group": {
                 "description": "",
-                "id": "18277c4705764bf0893dbd49f2930c34",
+                "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                 "is_error": true,
                 "name": "Ингредиенты"
             },
-            "id": "5b5936b9384a4fe59b24e3fd127377d0",
+            "id": "ab89d620f6944be3b76fb6540ccb8ea1",
             "is_error": true,
             "name": "Салат Романо",
             "unit": {
                 "base_unit": null,
                 "coefficient": 1,
                 "description": "",
-                "id": "4e2440552fd04af4b7d3df1031b2aedd",
+                "id": "ab7a514f98ab49f39d80cbc9b58ae083",
                 "is_error": true,
                 "name": "грамм"
             }
@@ -180,11 +153,11 @@
             "description": "",
             "group": {
                 "description": "",
-                "id": "18277c4705764bf0893dbd49f2930c34",
+                "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                 "is_error": true,
                 "name": "Ингредиенты"
             },
-            "id": "1696620e15b74a70b7fbd3c28076255b",
+            "id": "d905d25761c1494a9e8116850f7bba64",
             "is_error": true,
             "name": "Сыр Пармезан",
             "unit": {
@@ -192,13 +165,13 @@
                     "base_unit": null,
                     "coefficient": 1,
                     "description": "",
-                    "id": "5f73f137f82f4d7eb2d529a83b54b982",
+                    "id": "fadecbe67f34430da6ae5ea1dcbadaff",
                     "is_error": true,
                     "name": "грамм"
                 },
                 "coefficient": 1000,
                 "description": "",
-                "id": "1bed8c4830a64ab987692730fb43e84c",
+                "id": "fb04660c9c54435dbf0303cbb17b9deb",
                 "is_error": true,
                 "name": "киллограмм"
             }
@@ -207,11 +180,11 @@
             "description": "",
             "group": {
                 "description": "",
-                "id": "18277c4705764bf0893dbd49f2930c34",
+                "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                 "is_error": true,
                 "name": "Ингредиенты"
             },
-            "id": "87ae9afa51d74a94af801f7037d59d8d",
+            "id": "cab270aedf844216b0419675340bca12",
             "is_error": true,
             "name": "Чеснок",
             "unit": {
@@ -219,13 +192,13 @@
                     "base_unit": null,
                     "coefficient": 1,
                     "description": "",
-                    "id": "5f73f137f82f4d7eb2d529a83b54b982",
+                    "id": "fadecbe67f34430da6ae5ea1dcbadaff",
                     "is_error": true,
                     "name": "грамм"
                 },
                 "coefficient": 1000,
                 "description": "",
-                "id": "1bed8c4830a64ab987692730fb43e84c",
+                "id": "fb04660c9c54435dbf0303cbb17b9deb",
                 "is_error": true,
                 "name": "киллограмм"
             }
@@ -234,11 +207,11 @@
             "description": "",
             "group": {
                 "description": "",
-                "id": "18277c4705764bf0893dbd49f2930c34",
+                "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                 "is_error": true,
                 "name": "Ингредиенты"
             },
-            "id": "3c8d6792212a4feba49e48770995ee55",
+            "id": "1d05d22f378c4f06a1d3f877aa42a183",
             "is_error": true,
             "name": "Белый хлеб",
             "unit": {
@@ -246,13 +219,13 @@
                     "base_unit": null,
                     "coefficient": 1,
                     "description": "",
-                    "id": "5f73f137f82f4d7eb2d529a83b54b982",
+                    "id": "fadecbe67f34430da6ae5ea1dcbadaff",
                     "is_error": true,
                     "name": "грамм"
                 },
                 "coefficient": 1000,
                 "description": "",
-                "id": "1bed8c4830a64ab987692730fb43e84c",
+                "id": "fb04660c9c54435dbf0303cbb17b9deb",
                 "is_error": true,
                 "name": "киллограмм"
             }
@@ -261,11 +234,11 @@
             "description": "",
             "group": {
                 "description": "",
-                "id": "18277c4705764bf0893dbd49f2930c34",
+                "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                 "is_error": true,
                 "name": "Ингредиенты"
             },
-            "id": "fb5741984d24441789ecd2a2d0c6637a",
+            "id": "6eddc9037d984c68a222b1c72eba329e",
             "is_error": true,
             "name": "Соль",
             "unit": {
@@ -273,13 +246,13 @@
                     "base_unit": null,
                     "coefficient": 1,
                     "description": "",
-                    "id": "5f73f137f82f4d7eb2d529a83b54b982",
+                    "id": "fadecbe67f34430da6ae5ea1dcbadaff",
                     "is_error": true,
                     "name": "грамм"
                 },
                 "coefficient": 1000,
                 "description": "",
-                "id": "1bed8c4830a64ab987692730fb43e84c",
+                "id": "fb04660c9c54435dbf0303cbb17b9deb",
                 "is_error": true,
                 "name": "киллограмм"
             }
@@ -288,18 +261,18 @@
             "description": "",
             "group": {
                 "description": "",
-                "id": "18277c4705764bf0893dbd49f2930c34",
+                "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                 "is_error": true,
                 "name": "Ингредиенты"
             },
-            "id": "6ea66e6494ad447a996ad93fdb38697e",
+            "id": "8e4ca0fc74724c13aa43a2789a8b303d",
             "is_error": true,
             "name": "Черный перец",
             "unit": {
                 "base_unit": null,
                 "coefficient": 1,
                 "description": "",
-                "id": "4e2440552fd04af4b7d3df1031b2aedd",
+                "id": "ab7a514f98ab49f39d80cbc9b58ae083",
                 "is_error": true,
                 "name": "грамм"
             }
@@ -308,11 +281,11 @@
             "description": "",
             "group": {
                 "description": "",
-                "id": "18277c4705764bf0893dbd49f2930c34",
+                "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                 "is_error": true,
                 "name": "Ингредиенты"
             },
-            "id": "e8bc8e612eab4fecb1ba20b685267cc6",
+            "id": "82b23f3667ea46af8f88b05885740384",
             "is_error": true,
             "name": "Оливковое масло",
             "unit": {
@@ -320,13 +293,13 @@
                     "base_unit": null,
                     "coefficient": 1,
                     "description": "",
-                    "id": "11be8eb6981a4f49bbe0fe93f136a00e",
+                    "id": "ccebd30653604e079e414d631110d3ab",
                     "is_error": true,
                     "name": "миллилитр"
                 },
                 "coefficient": 1000,
                 "description": "",
-                "id": "ce323ec5feb840c9843d4380a8630fcf",
+                "id": "018d0d9fe93f4bd0b22683f7520de8df",
                 "is_error": true,
                 "name": "литр"
             }
@@ -335,11 +308,11 @@
             "description": "",
             "group": {
                 "description": "",
-                "id": "18277c4705764bf0893dbd49f2930c34",
+                "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                 "is_error": true,
                 "name": "Ингредиенты"
             },
-            "id": "cdbbecb3fa594a799e5b4c6a14058c42",
+            "id": "f97e6e62bf324613b6d46944254200a3",
             "is_error": true,
             "name": "Лимонный сок",
             "unit": {
@@ -347,13 +320,13 @@
                     "base_unit": null,
                     "coefficient": 1,
                     "description": "",
-                    "id": "11be8eb6981a4f49bbe0fe93f136a00e",
+                    "id": "ccebd30653604e079e414d631110d3ab",
                     "is_error": true,
                     "name": "миллилитр"
                 },
                 "coefficient": 1000,
                 "description": "",
-                "id": "ce323ec5feb840c9843d4380a8630fcf",
+                "id": "018d0d9fe93f4bd0b22683f7520de8df",
                 "is_error": true,
                 "name": "литр"
             }
@@ -362,18 +335,18 @@
             "description": "",
             "group": {
                 "description": "",
-                "id": "18277c4705764bf0893dbd49f2930c34",
+                "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                 "is_error": true,
                 "name": "Ингредиенты"
             },
-            "id": "af0af126ae0b41c38ea53544777721b9",
+            "id": "4cb8e3f67a2148f39c7ab0637dd0c91e",
             "is_error": true,
             "name": "Горчица дижонская",
             "unit": {
                 "base_unit": null,
                 "coefficient": 1,
                 "description": "",
-                "id": "4e2440552fd04af4b7d3df1031b2aedd",
+                "id": "ab7a514f98ab49f39d80cbc9b58ae083",
                 "is_error": true,
                 "name": "грамм"
             }
@@ -382,18 +355,18 @@
             "description": "",
             "group": {
                 "description": "",
-                "id": "18277c4705764bf0893dbd49f2930c34",
+                "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                 "is_error": true,
                 "name": "Ингредиенты"
             },
-            "id": "ffa7503c9ef64bdcb51b762fa3595649",
+            "id": "51e01360c4a94d57ac3df4d6711f54eb",
             "is_error": true,
             "name": "Сахарная пудра",
             "unit": {
                 "base_unit": null,
                 "coefficient": 1,
                 "description": "",
-                "id": "4e2440552fd04af4b7d3df1031b2aedd",
+                "id": "ab7a514f98ab49f39d80cbc9b58ae083",
                 "is_error": true,
                 "name": "грамм"
             }
@@ -402,18 +375,18 @@
             "description": "",
             "group": {
                 "description": "",
-                "id": "18277c4705764bf0893dbd49f2930c34",
+                "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                 "is_error": true,
                 "name": "Ингредиенты"
             },
-            "id": "0be1452f2ae649e88008a595ba309aba",
+            "id": "495964499efa4d5899397b26f9b3a2c2",
             "is_error": true,
             "name": "Ванилиин",
             "unit": {
                 "base_unit": null,
                 "coefficient": 1,
                 "description": "",
-                "id": "4e2440552fd04af4b7d3df1031b2aedd",
+                "id": "ab7a514f98ab49f39d80cbc9b58ae083",
                 "is_error": true,
                 "name": "грамм"
             }
@@ -422,18 +395,18 @@
             "description": "",
             "group": {
                 "description": "",
-                "id": "18277c4705764bf0893dbd49f2930c34",
+                "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                 "is_error": true,
                 "name": "Ингредиенты"
             },
-            "id": "f658b569df3d46709cce01b5a7383cd5",
+            "id": "c61f54f12e57422caa08cd171132c301",
             "is_error": true,
             "name": "Корица",
             "unit": {
                 "base_unit": null,
                 "coefficient": 1,
                 "description": "",
-                "id": "4e2440552fd04af4b7d3df1031b2aedd",
+                "id": "ab7a514f98ab49f39d80cbc9b58ae083",
                 "is_error": true,
                 "name": "грамм"
             }
@@ -442,11 +415,11 @@
             "description": "",
             "group": {
                 "description": "",
-                "id": "18277c4705764bf0893dbd49f2930c34",
+                "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                 "is_error": true,
                 "name": "Ингредиенты"
             },
-            "id": "bf459ed1953f437fa0a1a7f2f3c87f46",
+            "id": "2a1c1aff14684457b083356cef6c566a",
             "is_error": true,
             "name": "Какао",
             "unit": {
@@ -454,13 +427,13 @@
                     "base_unit": null,
                     "coefficient": 1,
                     "description": "",
-                    "id": "5f73f137f82f4d7eb2d529a83b54b982",
+                    "id": "fadecbe67f34430da6ae5ea1dcbadaff",
                     "is_error": true,
                     "name": "грамм"
                 },
                 "coefficient": 1000,
                 "description": "",
-                "id": "1bed8c4830a64ab987692730fb43e84c",
+                "id": "fb04660c9c54435dbf0303cbb17b9deb",
                 "is_error": true,
                 "name": "киллограмм"
             }
@@ -468,242 +441,23 @@
     ],
     "receipe_model": [
         {
-            "brutto": 251,
-            "comments": "",
-            "consist": {
-                "Мука пшеничная": {
-                    "description": "",
-                    "id": "7c92cf932de44581951ca05738464de2",
-                    "is_error": true,
-                    "name": "Мука пшеничная",
-                    "nomenclature": {
-                        "description": "",
-                        "group": {
-                            "description": "",
-                            "id": "18277c4705764bf0893dbd49f2930c34",
-                            "is_error": true,
-                            "name": "Ингредиенты"
-                        },
-                        "id": "5c16c9c869c944ca81571f6cf70a790d",
-                        "is_error": true,
-                        "name": "Мука пшеничная",
-                        "unit": {
-                            "base_unit": {
-                                "base_unit": null,
-                                "coefficient": 1,
-                                "description": "",
-                                "id": "5f73f137f82f4d7eb2d529a83b54b982",
-                                "is_error": true,
-                                "name": "грамм"
-                            },
-                            "coefficient": 1000,
-                            "description": "",
-                            "id": "1bed8c4830a64ab987692730fb43e84c",
-                            "is_error": true,
-                            "name": "киллограмм"
-                        }
-                    },
-                    "size": 100,
-                    "unit": {
-                        "base_unit": null,
-                        "coefficient": 1,
-                        "description": "",
-                        "id": "5f73f137f82f4d7eb2d529a83b54b982",
-                        "is_error": true,
-                        "name": "грамм"
-                    }
-                },
-                "Сахар": {
-                    "description": "",
-                    "id": "4f50b78ffb3f43848bdb08279ff95823",
-                    "is_error": true,
-                    "name": "Сахар",
-                    "nomenclature": {
-                        "description": "",
-                        "group": {
-                            "description": "",
-                            "id": "18277c4705764bf0893dbd49f2930c34",
-                            "is_error": true,
-                            "name": "Ингредиенты"
-                        },
-                        "id": "e787ff8a837d40418f9121f1272616ab",
-                        "is_error": true,
-                        "name": "Сахар",
-                        "unit": {
-                            "base_unit": {
-                                "base_unit": null,
-                                "coefficient": 1,
-                                "description": "",
-                                "id": "5f73f137f82f4d7eb2d529a83b54b982",
-                                "is_error": true,
-                                "name": "грамм"
-                            },
-                            "coefficient": 1000,
-                            "description": "",
-                            "id": "1bed8c4830a64ab987692730fb43e84c",
-                            "is_error": true,
-                            "name": "киллограмм"
-                        }
-                    },
-                    "size": 80,
-                    "unit": {
-                        "base_unit": null,
-                        "coefficient": 1,
-                        "description": "",
-                        "id": "5f73f137f82f4d7eb2d529a83b54b982",
-                        "is_error": true,
-                        "name": "грамм"
-                    }
-                },
-                "Сливочное масло": {
-                    "description": "",
-                    "id": "244833ce4dad4f21bbdddeb0bce73ec2",
-                    "is_error": true,
-                    "name": "Сливочное масло",
-                    "nomenclature": {
-                        "description": "",
-                        "group": {
-                            "description": "",
-                            "id": "18277c4705764bf0893dbd49f2930c34",
-                            "is_error": true,
-                            "name": "Ингредиенты"
-                        },
-                        "id": "998f959f17704d85b0fad15936283032",
-                        "is_error": true,
-                        "name": "Сливочное масло",
-                        "unit": {
-                            "base_unit": {
-                                "base_unit": null,
-                                "coefficient": 1,
-                                "description": "",
-                                "id": "5f73f137f82f4d7eb2d529a83b54b982",
-                                "is_error": true,
-                                "name": "грамм"
-                            },
-                            "coefficient": 1000,
-                            "description": "",
-                            "id": "1bed8c4830a64ab987692730fb43e84c",
-                            "is_error": true,
-                            "name": "киллограмм"
-                        }
-                    },
-                    "size": 70,
-                    "unit": {
-                        "base_unit": null,
-                        "coefficient": 1,
-                        "description": "",
-                        "id": "5f73f137f82f4d7eb2d529a83b54b982",
-                        "is_error": true,
-                        "name": "грамм"
-                    }
-                },
-                "Яйца": {
-                    "description": "",
-                    "id": "843cebf7329d41de9dff0ae4bdbb43cb",
-                    "is_error": true,
-                    "name": "Яйца",
-                    "nomenclature": {
-                        "description": "",
-                        "group": {
-                            "description": "",
-                            "id": "18277c4705764bf0893dbd49f2930c34",
-                            "is_error": true,
-                            "name": "Ингредиенты"
-                        },
-                        "id": "8beba2f92e754eeda776859bc197af39",
-                        "is_error": true,
-                        "name": "Яйца",
-                        "unit": {
-                            "base_unit": null,
-                            "coefficient": 1,
-                            "description": "",
-                            "id": "f1a87af30e0c4faca9c3184050b3e370",
-                            "is_error": true,
-                            "name": "штука"
-                        }
-                    },
-                    "size": 1,
-                    "unit": {
-                        "base_unit": null,
-                        "coefficient": 1,
-                        "description": "",
-                        "id": "f1a87af30e0c4faca9c3184050b3e370",
-                        "is_error": true,
-                        "name": "штука"
-                    }
-                }
-            },
-            "description": "",
-            "id": "89a9226cf02643d8a9e856fbc0ca4351",
-            "instructions": [
-                {
-                    "instructions": {
-                        "instructions": {
-                            "instructions": {
-                                "instructions": "Масло положите в сотейник с толстым дном. Растопите его на маленьком огне на плите, на водяной бане либо в микроволновке."
-                            }
-                        }
-                    }
-                },
-                {
-                    "instructions": {
-                        "instructions": {
-                            "instructions": {
-                                "instructions": "Добавьте в теплое масло сахар. Перемешайте венчиком до полного растворения сахара. От тепла сахар довольно быстро растает."
-                            }
-                        }
-                    }
-                },
-                {
-                    "instructions": {
-                        "instructions": {
-                            "instructions": {
-                                "instructions": "Добавьте в масло яйцо. Предварительно все-таки проверьте масло, не горячее ли оно, иначе яйцо может свариться. Перемешайте яйцо с маслом до однородности."
-                            }
-                        }
-                    }
-                },
-                {
-                    "instructions": {
-                        "instructions": {
-                            "instructions": {
-                                "instructions": "Всыпьте муку, добавьте ванилин."
-                            }
-                        }
-                    }
-                },
-                {
-                    "instructions": {
-                        "instructions": {
-                            "instructions": {
-                                "instructions": "Перемешайте массу венчиком до состояния гладкого однородного теста."
-                            }
-                        }
-                    }
-                }
-            ],
-            "is_error": true,
-            "name": "Вафли хрустящие в вафильнице",
-            "netto": 0
-        },
-        {
             "brutto": 369,
             "comments": "",
             "consist": {
                 "Белый хлеб": {
                     "description": "",
-                    "id": "fe7a448350184766b6c57a1cea5df43e",
+                    "id": "6eab282fcf8143bc99743b8a3e102820",
                     "is_error": true,
                     "name": "Белый хлеб",
                     "nomenclature": {
                         "description": "",
                         "group": {
                             "description": "",
-                            "id": "18277c4705764bf0893dbd49f2930c34",
+                            "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                             "is_error": true,
                             "name": "Ингредиенты"
                         },
-                        "id": "3c8d6792212a4feba49e48770995ee55",
+                        "id": "1d05d22f378c4f06a1d3f877aa42a183",
                         "is_error": true,
                         "name": "Белый хлеб",
                         "unit": {
@@ -711,13 +465,13 @@
                                 "base_unit": null,
                                 "coefficient": 1,
                                 "description": "",
-                                "id": "5f73f137f82f4d7eb2d529a83b54b982",
+                                "id": "fadecbe67f34430da6ae5ea1dcbadaff",
                                 "is_error": true,
                                 "name": "грамм"
                             },
                             "coefficient": 1000,
                             "description": "",
-                            "id": "1bed8c4830a64ab987692730fb43e84c",
+                            "id": "fb04660c9c54435dbf0303cbb17b9deb",
                             "is_error": true,
                             "name": "киллограмм"
                         }
@@ -727,32 +481,32 @@
                         "base_unit": null,
                         "coefficient": 1,
                         "description": "",
-                        "id": "5f73f137f82f4d7eb2d529a83b54b982",
+                        "id": "fadecbe67f34430da6ae5ea1dcbadaff",
                         "is_error": true,
                         "name": "грамм"
                     }
                 },
                 "Горчица дижонская": {
                     "description": "",
-                    "id": "a5221530e2574658bb08fd2d55ef4a97",
+                    "id": "7e42eb65483547948c6102133ac60fa8",
                     "is_error": true,
                     "name": "Горчица дижонская",
                     "nomenclature": {
                         "description": "",
                         "group": {
                             "description": "",
-                            "id": "18277c4705764bf0893dbd49f2930c34",
+                            "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                             "is_error": true,
                             "name": "Ингредиенты"
                         },
-                        "id": "af0af126ae0b41c38ea53544777721b9",
+                        "id": "4cb8e3f67a2148f39c7ab0637dd0c91e",
                         "is_error": true,
                         "name": "Горчица дижонская",
                         "unit": {
                             "base_unit": null,
                             "coefficient": 1,
                             "description": "",
-                            "id": "4e2440552fd04af4b7d3df1031b2aedd",
+                            "id": "ab7a514f98ab49f39d80cbc9b58ae083",
                             "is_error": true,
                             "name": "грамм"
                         }
@@ -762,25 +516,25 @@
                         "base_unit": null,
                         "coefficient": 1,
                         "description": "",
-                        "id": "4e2440552fd04af4b7d3df1031b2aedd",
+                        "id": "ab7a514f98ab49f39d80cbc9b58ae083",
                         "is_error": true,
                         "name": "грамм"
                     }
                 },
                 "Куринное филе": {
                     "description": "",
-                    "id": "8814e19f162e4b3db2a8233524c50955",
+                    "id": "5b9452b59a72403f88ef82474923df7a",
                     "is_error": true,
                     "name": "Куринное филе",
                     "nomenclature": {
                         "description": "",
                         "group": {
                             "description": "",
-                            "id": "18277c4705764bf0893dbd49f2930c34",
+                            "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                             "is_error": true,
                             "name": "Ингредиенты"
                         },
-                        "id": "6a448c9b996646888ace90ed26a7547b",
+                        "id": "3dd3920f3fcb4311bd42ffc743ca7205",
                         "is_error": true,
                         "name": "Куринное филе",
                         "unit": {
@@ -788,13 +542,13 @@
                                 "base_unit": null,
                                 "coefficient": 1,
                                 "description": "",
-                                "id": "5f73f137f82f4d7eb2d529a83b54b982",
+                                "id": "fadecbe67f34430da6ae5ea1dcbadaff",
                                 "is_error": true,
                                 "name": "грамм"
                             },
                             "coefficient": 1000,
                             "description": "",
-                            "id": "1bed8c4830a64ab987692730fb43e84c",
+                            "id": "fb04660c9c54435dbf0303cbb17b9deb",
                             "is_error": true,
                             "name": "киллограмм"
                         }
@@ -804,25 +558,25 @@
                         "base_unit": null,
                         "coefficient": 1,
                         "description": "",
-                        "id": "5f73f137f82f4d7eb2d529a83b54b982",
+                        "id": "fadecbe67f34430da6ae5ea1dcbadaff",
                         "is_error": true,
                         "name": "грамм"
                     }
                 },
                 "Лимонный сок": {
                     "description": "",
-                    "id": "2ca49b7384144e4eb07a3a8072de0d09",
+                    "id": "842bbf40e7944ef98085e64839454f94",
                     "is_error": true,
                     "name": "Лимонный сок",
                     "nomenclature": {
                         "description": "",
                         "group": {
                             "description": "",
-                            "id": "18277c4705764bf0893dbd49f2930c34",
+                            "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                             "is_error": true,
                             "name": "Ингредиенты"
                         },
-                        "id": "cdbbecb3fa594a799e5b4c6a14058c42",
+                        "id": "f97e6e62bf324613b6d46944254200a3",
                         "is_error": true,
                         "name": "Лимонный сок",
                         "unit": {
@@ -830,13 +584,13 @@
                                 "base_unit": null,
                                 "coefficient": 1,
                                 "description": "",
-                                "id": "11be8eb6981a4f49bbe0fe93f136a00e",
+                                "id": "ccebd30653604e079e414d631110d3ab",
                                 "is_error": true,
                                 "name": "миллилитр"
                             },
                             "coefficient": 1000,
                             "description": "",
-                            "id": "ce323ec5feb840c9843d4380a8630fcf",
+                            "id": "018d0d9fe93f4bd0b22683f7520de8df",
                             "is_error": true,
                             "name": "литр"
                         }
@@ -846,25 +600,25 @@
                         "base_unit": null,
                         "coefficient": 1,
                         "description": "",
-                        "id": "11be8eb6981a4f49bbe0fe93f136a00e",
+                        "id": "ccebd30653604e079e414d631110d3ab",
                         "is_error": true,
                         "name": "миллилитр"
                     }
                 },
                 "Оливковое масло": {
                     "description": "",
-                    "id": "b9999b177e644de5b52f2acaab0a1d58",
+                    "id": "e36103e1c64d42f697ba55d185fe16d5",
                     "is_error": true,
                     "name": "Оливковое масло",
                     "nomenclature": {
                         "description": "",
                         "group": {
                             "description": "",
-                            "id": "18277c4705764bf0893dbd49f2930c34",
+                            "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                             "is_error": true,
                             "name": "Ингредиенты"
                         },
-                        "id": "e8bc8e612eab4fecb1ba20b685267cc6",
+                        "id": "82b23f3667ea46af8f88b05885740384",
                         "is_error": true,
                         "name": "Оливковое масло",
                         "unit": {
@@ -872,13 +626,13 @@
                                 "base_unit": null,
                                 "coefficient": 1,
                                 "description": "",
-                                "id": "11be8eb6981a4f49bbe0fe93f136a00e",
+                                "id": "ccebd30653604e079e414d631110d3ab",
                                 "is_error": true,
                                 "name": "миллилитр"
                             },
                             "coefficient": 1000,
                             "description": "",
-                            "id": "ce323ec5feb840c9843d4380a8630fcf",
+                            "id": "018d0d9fe93f4bd0b22683f7520de8df",
                             "is_error": true,
                             "name": "литр"
                         }
@@ -888,32 +642,32 @@
                         "base_unit": null,
                         "coefficient": 1,
                         "description": "",
-                        "id": "11be8eb6981a4f49bbe0fe93f136a00e",
+                        "id": "ccebd30653604e079e414d631110d3ab",
                         "is_error": true,
                         "name": "миллилитр"
                     }
                 },
                 "Салат Романо": {
                     "description": "",
-                    "id": "2fccc854834a49ffb0f5a4f83801d2e5",
+                    "id": "0da395cc2e1442a9976196302d932fb5",
                     "is_error": true,
                     "name": "Салат Романо",
                     "nomenclature": {
                         "description": "",
                         "group": {
                             "description": "",
-                            "id": "18277c4705764bf0893dbd49f2930c34",
+                            "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                             "is_error": true,
                             "name": "Ингредиенты"
                         },
-                        "id": "5b5936b9384a4fe59b24e3fd127377d0",
+                        "id": "ab89d620f6944be3b76fb6540ccb8ea1",
                         "is_error": true,
                         "name": "Салат Романо",
                         "unit": {
                             "base_unit": null,
                             "coefficient": 1,
                             "description": "",
-                            "id": "4e2440552fd04af4b7d3df1031b2aedd",
+                            "id": "ab7a514f98ab49f39d80cbc9b58ae083",
                             "is_error": true,
                             "name": "грамм"
                         }
@@ -923,25 +677,25 @@
                         "base_unit": null,
                         "coefficient": 1,
                         "description": "",
-                        "id": "4e2440552fd04af4b7d3df1031b2aedd",
+                        "id": "ab7a514f98ab49f39d80cbc9b58ae083",
                         "is_error": true,
                         "name": "грамм"
                     }
                 },
                 "Соль": {
                     "description": "",
-                    "id": "a36a115edf094b9184a550f994242eb5",
+                    "id": "fbfe06dd5edb4912a03c6b454a649a00",
                     "is_error": true,
                     "name": "Соль",
                     "nomenclature": {
                         "description": "",
                         "group": {
                             "description": "",
-                            "id": "18277c4705764bf0893dbd49f2930c34",
+                            "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                             "is_error": true,
                             "name": "Ингредиенты"
                         },
-                        "id": "fb5741984d24441789ecd2a2d0c6637a",
+                        "id": "6eddc9037d984c68a222b1c72eba329e",
                         "is_error": true,
                         "name": "Соль",
                         "unit": {
@@ -949,13 +703,13 @@
                                 "base_unit": null,
                                 "coefficient": 1,
                                 "description": "",
-                                "id": "5f73f137f82f4d7eb2d529a83b54b982",
+                                "id": "fadecbe67f34430da6ae5ea1dcbadaff",
                                 "is_error": true,
                                 "name": "грамм"
                             },
                             "coefficient": 1000,
                             "description": "",
-                            "id": "1bed8c4830a64ab987692730fb43e84c",
+                            "id": "fb04660c9c54435dbf0303cbb17b9deb",
                             "is_error": true,
                             "name": "киллограмм"
                         }
@@ -965,25 +719,25 @@
                         "base_unit": null,
                         "coefficient": 1,
                         "description": "",
-                        "id": "5f73f137f82f4d7eb2d529a83b54b982",
+                        "id": "fadecbe67f34430da6ae5ea1dcbadaff",
                         "is_error": true,
                         "name": "грамм"
                     }
                 },
                 "Сыр Пармезан": {
                     "description": "",
-                    "id": "a36abd4567394c7396c0fccc15dfaaa8",
+                    "id": "4f49f40e99614ec5a020c9cd3915536b",
                     "is_error": true,
                     "name": "Сыр Пармезан",
                     "nomenclature": {
                         "description": "",
                         "group": {
                             "description": "",
-                            "id": "18277c4705764bf0893dbd49f2930c34",
+                            "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                             "is_error": true,
                             "name": "Ингредиенты"
                         },
-                        "id": "1696620e15b74a70b7fbd3c28076255b",
+                        "id": "d905d25761c1494a9e8116850f7bba64",
                         "is_error": true,
                         "name": "Сыр Пармезан",
                         "unit": {
@@ -991,13 +745,13 @@
                                 "base_unit": null,
                                 "coefficient": 1,
                                 "description": "",
-                                "id": "5f73f137f82f4d7eb2d529a83b54b982",
+                                "id": "fadecbe67f34430da6ae5ea1dcbadaff",
                                 "is_error": true,
                                 "name": "грамм"
                             },
                             "coefficient": 1000,
                             "description": "",
-                            "id": "1bed8c4830a64ab987692730fb43e84c",
+                            "id": "fb04660c9c54435dbf0303cbb17b9deb",
                             "is_error": true,
                             "name": "киллограмм"
                         }
@@ -1007,32 +761,32 @@
                         "base_unit": null,
                         "coefficient": 1,
                         "description": "",
-                        "id": "5f73f137f82f4d7eb2d529a83b54b982",
+                        "id": "fadecbe67f34430da6ae5ea1dcbadaff",
                         "is_error": true,
                         "name": "грамм"
                     }
                 },
                 "Черный перец": {
                     "description": "",
-                    "id": "1d51f6245b1d4f6db47670e91613a892",
+                    "id": "a59957b89be04671b1437e94c47dce18",
                     "is_error": true,
                     "name": "Черный перец",
                     "nomenclature": {
                         "description": "",
                         "group": {
                             "description": "",
-                            "id": "18277c4705764bf0893dbd49f2930c34",
+                            "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                             "is_error": true,
                             "name": "Ингредиенты"
                         },
-                        "id": "6ea66e6494ad447a996ad93fdb38697e",
+                        "id": "8e4ca0fc74724c13aa43a2789a8b303d",
                         "is_error": true,
                         "name": "Черный перец",
                         "unit": {
                             "base_unit": null,
                             "coefficient": 1,
                             "description": "",
-                            "id": "4e2440552fd04af4b7d3df1031b2aedd",
+                            "id": "ab7a514f98ab49f39d80cbc9b58ae083",
                             "is_error": true,
                             "name": "грамм"
                         }
@@ -1042,25 +796,25 @@
                         "base_unit": null,
                         "coefficient": 1,
                         "description": "",
-                        "id": "4e2440552fd04af4b7d3df1031b2aedd",
+                        "id": "ab7a514f98ab49f39d80cbc9b58ae083",
                         "is_error": true,
                         "name": "грамм"
                     }
                 },
                 "Чеснок": {
                     "description": "",
-                    "id": "20f1bb98774f498080cb7dc59a0be7fd",
+                    "id": "7cf5ba7ba6d14e208475fb87f6268be5",
                     "is_error": true,
                     "name": "Чеснок",
                     "nomenclature": {
                         "description": "",
                         "group": {
                             "description": "",
-                            "id": "18277c4705764bf0893dbd49f2930c34",
+                            "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                             "is_error": true,
                             "name": "Ингредиенты"
                         },
-                        "id": "87ae9afa51d74a94af801f7037d59d8d",
+                        "id": "cab270aedf844216b0419675340bca12",
                         "is_error": true,
                         "name": "Чеснок",
                         "unit": {
@@ -1068,13 +822,13 @@
                                 "base_unit": null,
                                 "coefficient": 1,
                                 "description": "",
-                                "id": "5f73f137f82f4d7eb2d529a83b54b982",
+                                "id": "fadecbe67f34430da6ae5ea1dcbadaff",
                                 "is_error": true,
                                 "name": "грамм"
                             },
                             "coefficient": 1000,
                             "description": "",
-                            "id": "1bed8c4830a64ab987692730fb43e84c",
+                            "id": "fb04660c9c54435dbf0303cbb17b9deb",
                             "is_error": true,
                             "name": "киллограмм"
                         }
@@ -1084,32 +838,32 @@
                         "base_unit": null,
                         "coefficient": 1,
                         "description": "",
-                        "id": "5f73f137f82f4d7eb2d529a83b54b982",
+                        "id": "fadecbe67f34430da6ae5ea1dcbadaff",
                         "is_error": true,
                         "name": "грамм"
                     }
                 },
                 "Яйца": {
                     "description": "",
-                    "id": "2ccd5d4a20a54eb0beebe0ee2fb87b41",
+                    "id": "949fcf121209490faf74d6af1f333989",
                     "is_error": true,
                     "name": "Яйца",
                     "nomenclature": {
                         "description": "",
                         "group": {
                             "description": "",
-                            "id": "18277c4705764bf0893dbd49f2930c34",
+                            "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                             "is_error": true,
                             "name": "Ингредиенты"
                         },
-                        "id": "8beba2f92e754eeda776859bc197af39",
+                        "id": "ca99006c549d400583812f29cde53262",
                         "is_error": true,
                         "name": "Яйца",
                         "unit": {
                             "base_unit": null,
                             "coefficient": 1,
                             "description": "",
-                            "id": "f1a87af30e0c4faca9c3184050b3e370",
+                            "id": "93f03cb6206d44539887c2c299d668aa",
                             "is_error": true,
                             "name": "штука"
                         }
@@ -1119,14 +873,14 @@
                         "base_unit": null,
                         "coefficient": 1,
                         "description": "",
-                        "id": "f1a87af30e0c4faca9c3184050b3e370",
+                        "id": "93f03cb6206d44539887c2c299d668aa",
                         "is_error": true,
                         "name": "штука"
                     }
                 }
             },
             "description": "",
-            "id": "c01913436f1a4d26b31359285fceb10f",
+            "id": "5e6446f0d7924936a65e89c12ae6597a",
             "instructions": [],
             "is_error": true,
             "name": "Цезарь с курицей",
@@ -1138,25 +892,25 @@
             "consist": {
                 "Ванилиин": {
                     "description": "",
-                    "id": "f58171de9ca34eecb26717784ed32133",
+                    "id": "a9c57c6cf5da4275a52f72e6b77a7a97",
                     "is_error": true,
                     "name": "Ванилиин",
                     "nomenclature": {
                         "description": "",
                         "group": {
                             "description": "",
-                            "id": "18277c4705764bf0893dbd49f2930c34",
+                            "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                             "is_error": true,
                             "name": "Ингредиенты"
                         },
-                        "id": "0be1452f2ae649e88008a595ba309aba",
+                        "id": "495964499efa4d5899397b26f9b3a2c2",
                         "is_error": true,
                         "name": "Ванилиин",
                         "unit": {
                             "base_unit": null,
                             "coefficient": 1,
                             "description": "",
-                            "id": "4e2440552fd04af4b7d3df1031b2aedd",
+                            "id": "ab7a514f98ab49f39d80cbc9b58ae083",
                             "is_error": true,
                             "name": "грамм"
                         }
@@ -1166,25 +920,25 @@
                         "base_unit": null,
                         "coefficient": 1,
                         "description": "",
-                        "id": "4e2440552fd04af4b7d3df1031b2aedd",
+                        "id": "ab7a514f98ab49f39d80cbc9b58ae083",
                         "is_error": true,
                         "name": "грамм"
                     }
                 },
                 "Какао": {
                     "description": "",
-                    "id": "e8e68575186d444e8c6d5c41918fba65",
+                    "id": "bc93342c32a34b14a34c1659fc1da79e",
                     "is_error": true,
                     "name": "Какао",
                     "nomenclature": {
                         "description": "",
                         "group": {
                             "description": "",
-                            "id": "18277c4705764bf0893dbd49f2930c34",
+                            "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                             "is_error": true,
                             "name": "Ингредиенты"
                         },
-                        "id": "bf459ed1953f437fa0a1a7f2f3c87f46",
+                        "id": "2a1c1aff14684457b083356cef6c566a",
                         "is_error": true,
                         "name": "Какао",
                         "unit": {
@@ -1192,13 +946,13 @@
                                 "base_unit": null,
                                 "coefficient": 1,
                                 "description": "",
-                                "id": "5f73f137f82f4d7eb2d529a83b54b982",
+                                "id": "fadecbe67f34430da6ae5ea1dcbadaff",
                                 "is_error": true,
                                 "name": "грамм"
                             },
                             "coefficient": 1000,
                             "description": "",
-                            "id": "1bed8c4830a64ab987692730fb43e84c",
+                            "id": "fb04660c9c54435dbf0303cbb17b9deb",
                             "is_error": true,
                             "name": "киллограмм"
                         }
@@ -1208,32 +962,32 @@
                         "base_unit": null,
                         "coefficient": 1,
                         "description": "",
-                        "id": "5f73f137f82f4d7eb2d529a83b54b982",
+                        "id": "fadecbe67f34430da6ae5ea1dcbadaff",
                         "is_error": true,
                         "name": "грамм"
                     }
                 },
                 "Корица": {
                     "description": "",
-                    "id": "dd8b376d6cd545589e2bf9937a8e44cd",
+                    "id": "163f77bca2e14751bcc2c6f9f68d751b",
                     "is_error": true,
                     "name": "Корица",
                     "nomenclature": {
                         "description": "",
                         "group": {
                             "description": "",
-                            "id": "18277c4705764bf0893dbd49f2930c34",
+                            "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                             "is_error": true,
                             "name": "Ингредиенты"
                         },
-                        "id": "f658b569df3d46709cce01b5a7383cd5",
+                        "id": "c61f54f12e57422caa08cd171132c301",
                         "is_error": true,
                         "name": "Корица",
                         "unit": {
                             "base_unit": null,
                             "coefficient": 1,
                             "description": "",
-                            "id": "4e2440552fd04af4b7d3df1031b2aedd",
+                            "id": "ab7a514f98ab49f39d80cbc9b58ae083",
                             "is_error": true,
                             "name": "грамм"
                         }
@@ -1243,32 +997,32 @@
                         "base_unit": null,
                         "coefficient": 1,
                         "description": "",
-                        "id": "4e2440552fd04af4b7d3df1031b2aedd",
+                        "id": "ab7a514f98ab49f39d80cbc9b58ae083",
                         "is_error": true,
                         "name": "грамм"
                     }
                 },
                 "Сахарная пудра": {
                     "description": "",
-                    "id": "b6c28c224bb44bf9a4b74bedc348af8c",
+                    "id": "b7472ebd08fd4886aac20f24962339ac",
                     "is_error": true,
                     "name": "Сахарная пудра",
                     "nomenclature": {
                         "description": "",
                         "group": {
                             "description": "",
-                            "id": "18277c4705764bf0893dbd49f2930c34",
+                            "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                             "is_error": true,
                             "name": "Ингредиенты"
                         },
-                        "id": "ffa7503c9ef64bdcb51b762fa3595649",
+                        "id": "51e01360c4a94d57ac3df4d6711f54eb",
                         "is_error": true,
                         "name": "Сахарная пудра",
                         "unit": {
                             "base_unit": null,
                             "coefficient": 1,
                             "description": "",
-                            "id": "4e2440552fd04af4b7d3df1031b2aedd",
+                            "id": "ab7a514f98ab49f39d80cbc9b58ae083",
                             "is_error": true,
                             "name": "грамм"
                         }
@@ -1278,32 +1032,32 @@
                         "base_unit": null,
                         "coefficient": 1,
                         "description": "",
-                        "id": "4e2440552fd04af4b7d3df1031b2aedd",
+                        "id": "ab7a514f98ab49f39d80cbc9b58ae083",
                         "is_error": true,
                         "name": "грамм"
                     }
                 },
                 "Яйца": {
                     "description": "",
-                    "id": "44a484b273994bb3973beaa793576b3a",
+                    "id": "d783fe9be2814302818673106628bdf8",
                     "is_error": true,
                     "name": "Яйца",
                     "nomenclature": {
                         "description": "",
                         "group": {
                             "description": "",
-                            "id": "18277c4705764bf0893dbd49f2930c34",
+                            "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                             "is_error": true,
                             "name": "Ингредиенты"
                         },
-                        "id": "8beba2f92e754eeda776859bc197af39",
+                        "id": "ca99006c549d400583812f29cde53262",
                         "is_error": true,
                         "name": "Яйца",
                         "unit": {
                             "base_unit": null,
                             "coefficient": 1,
                             "description": "",
-                            "id": "f1a87af30e0c4faca9c3184050b3e370",
+                            "id": "93f03cb6206d44539887c2c299d668aa",
                             "is_error": true,
                             "name": "штука"
                         }
@@ -1313,14 +1067,14 @@
                         "base_unit": null,
                         "coefficient": 1,
                         "description": "",
-                        "id": "f1a87af30e0c4faca9c3184050b3e370",
+                        "id": "93f03cb6206d44539887c2c299d668aa",
                         "is_error": true,
                         "name": "штука"
                     }
                 }
             },
             "description": "",
-            "id": "9c858076aacf425685bfbf60a0fd4267",
+            "id": "8cf33308a24042b08846ba9311a816ba",
             "instructions": [],
             "is_error": true,
             "name": "Безе",
@@ -1330,18 +1084,18 @@
     "storage_row_model": [
         {
             "description": "",
-            "id": "a66dd566f8764eee9ca29f6dc5245eb1",
+            "id": "d616f8a358dd475cac213d111d3598e7",
             "is_error": true,
             "name": "sample_credit_transaction",
             "nomenclature": {
                 "description": "",
                 "group": {
                     "description": "",
-                    "id": "18277c4705764bf0893dbd49f2930c34",
+                    "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                     "is_error": true,
                     "name": "Ингредиенты"
                 },
-                "id": "5c16c9c869c944ca81571f6cf70a790d",
+                "id": "76abba6715eb47bdb427eeebb93377a1",
                 "is_error": true,
                 "name": "Мука пшеничная",
                 "unit": {
@@ -1349,22 +1103,22 @@
                         "base_unit": null,
                         "coefficient": 1,
                         "description": "",
-                        "id": "5f73f137f82f4d7eb2d529a83b54b982",
+                        "id": "fadecbe67f34430da6ae5ea1dcbadaff",
                         "is_error": true,
                         "name": "грамм"
                     },
                     "coefficient": 1000,
                     "description": "",
-                    "id": "1bed8c4830a64ab987692730fb43e84c",
+                    "id": "fb04660c9c54435dbf0303cbb17b9deb",
                     "is_error": true,
                     "name": "киллограмм"
                 }
             },
-            "period": "2024-01-27",
+            "period": "2024-01-29",
             "storage": {
                 "address": "г. Москва. ул. Академика Королева, 10",
                 "description": "",
-                "id": "1fbbced64e3e474eb27e0f464161c61b",
+                "id": "7ac08cf7b4004a75b63a23483650bd40",
                 "is_error": true,
                 "name": "default"
             },
@@ -1374,13 +1128,13 @@
                     "base_unit": null,
                     "coefficient": 1,
                     "description": "",
-                    "id": "d8e5cf980f724a0b97b6a5ef65af6b1b",
+                    "id": "89a06e618cc043c3a005e13fcb8b92ea",
                     "is_error": true,
                     "name": "грамм"
                 },
                 "coefficient": 1000,
                 "description": "",
-                "id": "51fa5f0d487d4989bc4439e025a42255",
+                "id": "fdcea1999ba64a2e9f8629f9dc686567",
                 "is_error": true,
                 "name": "киллограмм"
             },
@@ -1388,34 +1142,34 @@
         },
         {
             "description": "",
-            "id": "b643d8e77fdf4459a6871281e8f10eac",
+            "id": "cc716e90d0574f9db4501c4061608b70",
             "is_error": true,
             "name": "sample_credit_transaction",
             "nomenclature": {
                 "description": "",
                 "group": {
                     "description": "",
-                    "id": "18277c4705764bf0893dbd49f2930c34",
+                    "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                     "is_error": true,
                     "name": "Ингредиенты"
                 },
-                "id": "6ea66e6494ad447a996ad93fdb38697e",
+                "id": "8e4ca0fc74724c13aa43a2789a8b303d",
                 "is_error": true,
                 "name": "Черный перец",
                 "unit": {
                     "base_unit": null,
                     "coefficient": 1,
                     "description": "",
-                    "id": "4e2440552fd04af4b7d3df1031b2aedd",
+                    "id": "ab7a514f98ab49f39d80cbc9b58ae083",
                     "is_error": true,
                     "name": "грамм"
                 }
             },
-            "period": "2024-01-15",
+            "period": "2024-01-13",
             "storage": {
                 "address": "г. Москва. ул. Академика Королева, 10",
                 "description": "",
-                "id": "1fbbced64e3e474eb27e0f464161c61b",
+                "id": "7ac08cf7b4004a75b63a23483650bd40",
                 "is_error": true,
                 "name": "default"
             },
@@ -1424,7 +1178,7 @@
                 "base_unit": null,
                 "coefficient": 1,
                 "description": "",
-                "id": "8d5f31aa6ca84177a6bd5761ab50f6fc",
+                "id": "508f115fbebc45a6b6f8d3839e38f136",
                 "is_error": true,
                 "name": "грамм"
             },
@@ -1432,18 +1186,18 @@
         },
         {
             "description": "",
-            "id": "da263ab918c34833a00b386b88781710",
+            "id": "bac02d27ee3c4146a17e4522f1b40724",
             "is_error": true,
             "name": "sample_credit_transaction",
             "nomenclature": {
                 "description": "",
                 "group": {
                     "description": "",
-                    "id": "18277c4705764bf0893dbd49f2930c34",
+                    "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                     "is_error": true,
                     "name": "Ингредиенты"
                 },
-                "id": "e787ff8a837d40418f9121f1272616ab",
+                "id": "8da309f875604bef9cdfab1aefb831dd",
                 "is_error": true,
                 "name": "Сахар",
                 "unit": {
@@ -1451,22 +1205,22 @@
                         "base_unit": null,
                         "coefficient": 1,
                         "description": "",
-                        "id": "5f73f137f82f4d7eb2d529a83b54b982",
+                        "id": "fadecbe67f34430da6ae5ea1dcbadaff",
                         "is_error": true,
                         "name": "грамм"
                     },
                     "coefficient": 1000,
                     "description": "",
-                    "id": "1bed8c4830a64ab987692730fb43e84c",
+                    "id": "fb04660c9c54435dbf0303cbb17b9deb",
                     "is_error": true,
                     "name": "киллограмм"
                 }
             },
-            "period": "2024-01-28",
+            "period": "2024-01-05",
             "storage": {
                 "address": "г. Москва. ул. Академика Королева, 10",
                 "description": "",
-                "id": "1fbbced64e3e474eb27e0f464161c61b",
+                "id": "7ac08cf7b4004a75b63a23483650bd40",
                 "is_error": true,
                 "name": "default"
             },
@@ -1476,13 +1230,13 @@
                     "base_unit": null,
                     "coefficient": 1,
                     "description": "",
-                    "id": "d8e5cf980f724a0b97b6a5ef65af6b1b",
+                    "id": "89a06e618cc043c3a005e13fcb8b92ea",
                     "is_error": true,
                     "name": "грамм"
                 },
                 "coefficient": 1000,
                 "description": "",
-                "id": "51fa5f0d487d4989bc4439e025a42255",
+                "id": "fdcea1999ba64a2e9f8629f9dc686567",
                 "is_error": true,
                 "name": "киллограмм"
             },
@@ -1490,34 +1244,34 @@
         },
         {
             "description": "",
-            "id": "9bd6f1ce38574a268820d59aaf9a32ce",
+            "id": "20ba927f9eaa4392b1bcd4bf8ee410e6",
             "is_error": true,
             "name": "sample_credit_transaction",
             "nomenclature": {
                 "description": "",
                 "group": {
                     "description": "",
-                    "id": "18277c4705764bf0893dbd49f2930c34",
+                    "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                     "is_error": true,
                     "name": "Ингредиенты"
                 },
-                "id": "8beba2f92e754eeda776859bc197af39",
+                "id": "ca99006c549d400583812f29cde53262",
                 "is_error": true,
                 "name": "Яйца",
                 "unit": {
                     "base_unit": null,
                     "coefficient": 1,
                     "description": "",
-                    "id": "f1a87af30e0c4faca9c3184050b3e370",
+                    "id": "93f03cb6206d44539887c2c299d668aa",
                     "is_error": true,
                     "name": "штука"
                 }
             },
-            "period": "2024-01-27",
+            "period": "2024-01-16",
             "storage": {
                 "address": "г. Москва. ул. Академика Королева, 10",
                 "description": "",
-                "id": "1fbbced64e3e474eb27e0f464161c61b",
+                "id": "7ac08cf7b4004a75b63a23483650bd40",
                 "is_error": true,
                 "name": "default"
             },
@@ -1526,7 +1280,7 @@
                 "base_unit": null,
                 "coefficient": 1,
                 "description": "",
-                "id": "aaa9f8244b2a4f1ca199b0b376967213",
+                "id": "1ed64f51e3e542ff8f5b814187f6a11e",
                 "is_error": true,
                 "name": "штука"
             },
@@ -1534,18 +1288,18 @@
         },
         {
             "description": "",
-            "id": "bf0a45ae55e048899dbce60f1ed7ea03",
+            "id": "b69bb9c34afd48e79fe0adf85b0e1d4e",
             "is_error": true,
             "name": "sample_credit_transaction",
             "nomenclature": {
                 "description": "",
                 "group": {
                     "description": "",
-                    "id": "18277c4705764bf0893dbd49f2930c34",
+                    "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                     "is_error": true,
                     "name": "Ингредиенты"
                 },
-                "id": "e8bc8e612eab4fecb1ba20b685267cc6",
+                "id": "82b23f3667ea46af8f88b05885740384",
                 "is_error": true,
                 "name": "Оливковое масло",
                 "unit": {
@@ -1553,22 +1307,22 @@
                         "base_unit": null,
                         "coefficient": 1,
                         "description": "",
-                        "id": "11be8eb6981a4f49bbe0fe93f136a00e",
+                        "id": "ccebd30653604e079e414d631110d3ab",
                         "is_error": true,
                         "name": "миллилитр"
                     },
                     "coefficient": 1000,
                     "description": "",
-                    "id": "ce323ec5feb840c9843d4380a8630fcf",
+                    "id": "018d0d9fe93f4bd0b22683f7520de8df",
                     "is_error": true,
                     "name": "литр"
                 }
             },
-            "period": "2024-01-03",
+            "period": "2024-01-25",
             "storage": {
                 "address": "г. Москва. ул. Академика Королева, 10",
                 "description": "",
-                "id": "1fbbced64e3e474eb27e0f464161c61b",
+                "id": "7ac08cf7b4004a75b63a23483650bd40",
                 "is_error": true,
                 "name": "default"
             },
@@ -1578,13 +1332,13 @@
                     "base_unit": null,
                     "coefficient": 1,
                     "description": "",
-                    "id": "d113c297f698464a85cff3e803f36ce7",
+                    "id": "55d07d69142b4eb3a923c3ba579be91d",
                     "is_error": true,
                     "name": "миллилитр"
                 },
                 "coefficient": 1000,
                 "description": "",
-                "id": "d486cc7e786f4b828933d5ace911a875",
+                "id": "dd2117795da34ce28a8fc9859746b1c9",
                 "is_error": true,
                 "name": "литр"
             },
@@ -1592,18 +1346,18 @@
         },
         {
             "description": "",
-            "id": "fb17787652844ae2b4cd276c81a588a1",
+            "id": "9fc4959d2227489c8c6f20f920badbda",
             "is_error": true,
             "name": "sample_credit_transaction",
             "nomenclature": {
                 "description": "",
                 "group": {
                     "description": "",
-                    "id": "18277c4705764bf0893dbd49f2930c34",
+                    "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                     "is_error": true,
                     "name": "Ингредиенты"
                 },
-                "id": "6a448c9b996646888ace90ed26a7547b",
+                "id": "3dd3920f3fcb4311bd42ffc743ca7205",
                 "is_error": true,
                 "name": "Куринное филе",
                 "unit": {
@@ -1611,22 +1365,22 @@
                         "base_unit": null,
                         "coefficient": 1,
                         "description": "",
-                        "id": "5f73f137f82f4d7eb2d529a83b54b982",
+                        "id": "fadecbe67f34430da6ae5ea1dcbadaff",
                         "is_error": true,
                         "name": "грамм"
                     },
                     "coefficient": 1000,
                     "description": "",
-                    "id": "1bed8c4830a64ab987692730fb43e84c",
+                    "id": "fb04660c9c54435dbf0303cbb17b9deb",
                     "is_error": true,
                     "name": "киллограмм"
                 }
             },
-            "period": "2024-01-31",
+            "period": "2024-01-25",
             "storage": {
                 "address": "г. Москва. ул. Академика Королева, 10",
                 "description": "",
-                "id": "1fbbced64e3e474eb27e0f464161c61b",
+                "id": "7ac08cf7b4004a75b63a23483650bd40",
                 "is_error": true,
                 "name": "default"
             },
@@ -1636,13 +1390,13 @@
                     "base_unit": null,
                     "coefficient": 1,
                     "description": "",
-                    "id": "d8e5cf980f724a0b97b6a5ef65af6b1b",
+                    "id": "89a06e618cc043c3a005e13fcb8b92ea",
                     "is_error": true,
                     "name": "грамм"
                 },
                 "coefficient": 1000,
                 "description": "",
-                "id": "51fa5f0d487d4989bc4439e025a42255",
+                "id": "fdcea1999ba64a2e9f8629f9dc686567",
                 "is_error": true,
                 "name": "киллограмм"
             },
@@ -1650,25 +1404,178 @@
         },
         {
             "description": "",
-            "id": "30168c6837f04bd4b212d65d8ffd1eb0",
+            "id": "773b4e62b90d48729ceeebc6fbeb62e5",
             "is_error": true,
             "name": "sample_credit_transaction",
             "nomenclature": {
                 "description": "",
                 "group": {
                     "description": "",
-                    "id": "18277c4705764bf0893dbd49f2930c34",
+                    "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                     "is_error": true,
                     "name": "Ингредиенты"
                 },
-                "id": "5b5936b9384a4fe59b24e3fd127377d0",
+                "id": "ab89d620f6944be3b76fb6540ccb8ea1",
                 "is_error": true,
                 "name": "Салат Романо",
                 "unit": {
                     "base_unit": null,
                     "coefficient": 1,
                     "description": "",
-                    "id": "4e2440552fd04af4b7d3df1031b2aedd",
+                    "id": "ab7a514f98ab49f39d80cbc9b58ae083",
+                    "is_error": true,
+                    "name": "грамм"
+                }
+            },
+            "period": "2024-01-11",
+            "storage": {
+                "address": "г. Москва. ул. Академика Королева, 10",
+                "description": "",
+                "id": "7ac08cf7b4004a75b63a23483650bd40",
+                "is_error": true,
+                "name": "default"
+            },
+            "storage_type": true,
+            "unit": {
+                "base_unit": null,
+                "coefficient": 1,
+                "description": "",
+                "id": "1ed64f51e3e542ff8f5b814187f6a11e",
+                "is_error": true,
+                "name": "штука"
+            },
+            "value": 1
+        },
+        {
+            "description": "",
+            "id": "429390d31e3a4b3c9328ad8b529020c0",
+            "is_error": true,
+            "name": "sample_credit_transaction",
+            "nomenclature": {
+                "description": "",
+                "group": {
+                    "description": "",
+                    "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
+                    "is_error": true,
+                    "name": "Ингредиенты"
+                },
+                "id": "1d05d22f378c4f06a1d3f877aa42a183",
+                "is_error": true,
+                "name": "Белый хлеб",
+                "unit": {
+                    "base_unit": {
+                        "base_unit": null,
+                        "coefficient": 1,
+                        "description": "",
+                        "id": "fadecbe67f34430da6ae5ea1dcbadaff",
+                        "is_error": true,
+                        "name": "грамм"
+                    },
+                    "coefficient": 1000,
+                    "description": "",
+                    "id": "fb04660c9c54435dbf0303cbb17b9deb",
+                    "is_error": true,
+                    "name": "киллограмм"
+                }
+            },
+            "period": "2024-01-10",
+            "storage": {
+                "address": "г. Москва. ул. Академика Королева, 10",
+                "description": "",
+                "id": "7ac08cf7b4004a75b63a23483650bd40",
+                "is_error": true,
+                "name": "default"
+            },
+            "storage_type": true,
+            "unit": {
+                "base_unit": null,
+                "coefficient": 1,
+                "description": "",
+                "id": "1ed64f51e3e542ff8f5b814187f6a11e",
+                "is_error": true,
+                "name": "штука"
+            },
+            "value": 3
+        },
+        {
+            "description": "",
+            "id": "ae321a71277047edb91b47bb4fa90349",
+            "is_error": true,
+            "name": "sample_credit_transaction",
+            "nomenclature": {
+                "description": "",
+                "group": {
+                    "description": "",
+                    "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
+                    "is_error": true,
+                    "name": "Ингредиенты"
+                },
+                "id": "d905d25761c1494a9e8116850f7bba64",
+                "is_error": true,
+                "name": "Сыр Пармезан",
+                "unit": {
+                    "base_unit": {
+                        "base_unit": null,
+                        "coefficient": 1,
+                        "description": "",
+                        "id": "fadecbe67f34430da6ae5ea1dcbadaff",
+                        "is_error": true,
+                        "name": "грамм"
+                    },
+                    "coefficient": 1000,
+                    "description": "",
+                    "id": "fb04660c9c54435dbf0303cbb17b9deb",
+                    "is_error": true,
+                    "name": "киллограмм"
+                }
+            },
+            "period": "2024-01-22",
+            "storage": {
+                "address": "г. Москва. ул. Академика Королева, 10",
+                "description": "",
+                "id": "7ac08cf7b4004a75b63a23483650bd40",
+                "is_error": true,
+                "name": "default"
+            },
+            "storage_type": true,
+            "unit": {
+                "base_unit": {
+                    "base_unit": null,
+                    "coefficient": 1,
+                    "description": "",
+                    "id": "89a06e618cc043c3a005e13fcb8b92ea",
+                    "is_error": true,
+                    "name": "грамм"
+                },
+                "coefficient": 1000,
+                "description": "",
+                "id": "fdcea1999ba64a2e9f8629f9dc686567",
+                "is_error": true,
+                "name": "киллограмм"
+            },
+            "value": 0.2
+        },
+        {
+            "description": "",
+            "id": "355be0bd094e4559be3285da1f36e25a",
+            "is_error": true,
+            "name": "sample_credit_transaction",
+            "nomenclature": {
+                "description": "",
+                "group": {
+                    "description": "",
+                    "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
+                    "is_error": true,
+                    "name": "Ингредиенты"
+                },
+                "id": "4cb8e3f67a2148f39c7ab0637dd0c91e",
+                "is_error": true,
+                "name": "Горчица дижонская",
+                "unit": {
+                    "base_unit": null,
+                    "coefficient": 1,
+                    "description": "",
+                    "id": "ab7a514f98ab49f39d80cbc9b58ae083",
                     "is_error": true,
                     "name": "грамм"
                 }
@@ -1677,109 +1584,7 @@
             "storage": {
                 "address": "г. Москва. ул. Академика Королева, 10",
                 "description": "",
-                "id": "1fbbced64e3e474eb27e0f464161c61b",
-                "is_error": true,
-                "name": "default"
-            },
-            "storage_type": true,
-            "unit": {
-                "base_unit": null,
-                "coefficient": 1,
-                "description": "",
-                "id": "aaa9f8244b2a4f1ca199b0b376967213",
-                "is_error": true,
-                "name": "штука"
-            },
-            "value": 1
-        },
-        {
-            "description": "",
-            "id": "9f2ecf8cbf64420882ee07e2024cfee3",
-            "is_error": true,
-            "name": "sample_credit_transaction",
-            "nomenclature": {
-                "description": "",
-                "group": {
-                    "description": "",
-                    "id": "18277c4705764bf0893dbd49f2930c34",
-                    "is_error": true,
-                    "name": "Ингредиенты"
-                },
-                "id": "3c8d6792212a4feba49e48770995ee55",
-                "is_error": true,
-                "name": "Белый хлеб",
-                "unit": {
-                    "base_unit": {
-                        "base_unit": null,
-                        "coefficient": 1,
-                        "description": "",
-                        "id": "5f73f137f82f4d7eb2d529a83b54b982",
-                        "is_error": true,
-                        "name": "грамм"
-                    },
-                    "coefficient": 1000,
-                    "description": "",
-                    "id": "1bed8c4830a64ab987692730fb43e84c",
-                    "is_error": true,
-                    "name": "киллограмм"
-                }
-            },
-            "period": "2024-01-09",
-            "storage": {
-                "address": "г. Москва. ул. Академика Королева, 10",
-                "description": "",
-                "id": "1fbbced64e3e474eb27e0f464161c61b",
-                "is_error": true,
-                "name": "default"
-            },
-            "storage_type": true,
-            "unit": {
-                "base_unit": null,
-                "coefficient": 1,
-                "description": "",
-                "id": "aaa9f8244b2a4f1ca199b0b376967213",
-                "is_error": true,
-                "name": "штука"
-            },
-            "value": 3
-        },
-        {
-            "description": "",
-            "id": "5c18cef4d4584b9a80077766225eaaed",
-            "is_error": true,
-            "name": "sample_credit_transaction",
-            "nomenclature": {
-                "description": "",
-                "group": {
-                    "description": "",
-                    "id": "18277c4705764bf0893dbd49f2930c34",
-                    "is_error": true,
-                    "name": "Ингредиенты"
-                },
-                "id": "1696620e15b74a70b7fbd3c28076255b",
-                "is_error": true,
-                "name": "Сыр Пармезан",
-                "unit": {
-                    "base_unit": {
-                        "base_unit": null,
-                        "coefficient": 1,
-                        "description": "",
-                        "id": "5f73f137f82f4d7eb2d529a83b54b982",
-                        "is_error": true,
-                        "name": "грамм"
-                    },
-                    "coefficient": 1000,
-                    "description": "",
-                    "id": "1bed8c4830a64ab987692730fb43e84c",
-                    "is_error": true,
-                    "name": "киллограмм"
-                }
-            },
-            "period": "2024-01-27",
-            "storage": {
-                "address": "г. Москва. ул. Академика Королева, 10",
-                "description": "",
-                "id": "1fbbced64e3e474eb27e0f464161c61b",
+                "id": "7ac08cf7b4004a75b63a23483650bd40",
                 "is_error": true,
                 "name": "default"
             },
@@ -1789,64 +1594,13 @@
                     "base_unit": null,
                     "coefficient": 1,
                     "description": "",
-                    "id": "d8e5cf980f724a0b97b6a5ef65af6b1b",
-                    "is_error": true,
-                    "name": "грамм"
-                },
-                "coefficient": 1000,
-                "description": "",
-                "id": "51fa5f0d487d4989bc4439e025a42255",
-                "is_error": true,
-                "name": "киллограмм"
-            },
-            "value": 0.2
-        },
-        {
-            "description": "",
-            "id": "0cf3414a8d114f3c89db9741aa9acadf",
-            "is_error": true,
-            "name": "sample_credit_transaction",
-            "nomenclature": {
-                "description": "",
-                "group": {
-                    "description": "",
-                    "id": "18277c4705764bf0893dbd49f2930c34",
-                    "is_error": true,
-                    "name": "Ингредиенты"
-                },
-                "id": "af0af126ae0b41c38ea53544777721b9",
-                "is_error": true,
-                "name": "Горчица дижонская",
-                "unit": {
-                    "base_unit": null,
-                    "coefficient": 1,
-                    "description": "",
-                    "id": "4e2440552fd04af4b7d3df1031b2aedd",
-                    "is_error": true,
-                    "name": "грамм"
-                }
-            },
-            "period": "2024-01-06",
-            "storage": {
-                "address": "г. Москва. ул. Академика Королева, 10",
-                "description": "",
-                "id": "1fbbced64e3e474eb27e0f464161c61b",
-                "is_error": true,
-                "name": "default"
-            },
-            "storage_type": true,
-            "unit": {
-                "base_unit": {
-                    "base_unit": null,
-                    "coefficient": 1,
-                    "description": "",
-                    "id": "d113c297f698464a85cff3e803f36ce7",
+                    "id": "55d07d69142b4eb3a923c3ba579be91d",
                     "is_error": true,
                     "name": "миллилитр"
                 },
                 "coefficient": 1000,
                 "description": "",
-                "id": "d486cc7e786f4b828933d5ace911a875",
+                "id": "dd2117795da34ce28a8fc9859746b1c9",
                 "is_error": true,
                 "name": "литр"
             },
@@ -1854,301 +1608,25 @@
         },
         {
             "description": "",
-            "id": "2f2bede132d1485e9562ca13326ab5ac",
+            "id": "bb99f90746494717b95ea8719fb87dc3",
             "is_error": true,
             "name": "sample_credit_transaction",
             "nomenclature": {
                 "description": "",
                 "group": {
                     "description": "",
-                    "id": "18277c4705764bf0893dbd49f2930c34",
+                    "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                     "is_error": true,
                     "name": "Ингредиенты"
                 },
-                "id": "6ea66e6494ad447a996ad93fdb38697e",
+                "id": "8e4ca0fc74724c13aa43a2789a8b303d",
                 "is_error": true,
                 "name": "Черный перец",
                 "unit": {
                     "base_unit": null,
                     "coefficient": 1,
                     "description": "",
-                    "id": "4e2440552fd04af4b7d3df1031b2aedd",
-                    "is_error": true,
-                    "name": "грамм"
-                }
-            },
-            "period": "2024-01-17",
-            "storage": {
-                "address": "г. Москва. ул. Академика Королева, 10",
-                "description": "",
-                "id": "1fbbced64e3e474eb27e0f464161c61b",
-                "is_error": true,
-                "name": "default"
-            },
-            "storage_type": true,
-            "unit": {
-                "base_unit": null,
-                "coefficient": 1,
-                "description": "",
-                "id": "8d5f31aa6ca84177a6bd5761ab50f6fc",
-                "is_error": true,
-                "name": "грамм"
-            },
-            "value": 10
-        },
-        {
-            "description": "",
-            "id": "15e085acf2224edab862af3d79dfeab5",
-            "is_error": true,
-            "name": "sample_credit_transaction",
-            "nomenclature": {
-                "description": "",
-                "group": {
-                    "description": "",
-                    "id": "18277c4705764bf0893dbd49f2930c34",
-                    "is_error": true,
-                    "name": "Ингредиенты"
-                },
-                "id": "cdbbecb3fa594a799e5b4c6a14058c42",
-                "is_error": true,
-                "name": "Лимонный сок",
-                "unit": {
-                    "base_unit": {
-                        "base_unit": null,
-                        "coefficient": 1,
-                        "description": "",
-                        "id": "11be8eb6981a4f49bbe0fe93f136a00e",
-                        "is_error": true,
-                        "name": "миллилитр"
-                    },
-                    "coefficient": 1000,
-                    "description": "",
-                    "id": "ce323ec5feb840c9843d4380a8630fcf",
-                    "is_error": true,
-                    "name": "литр"
-                }
-            },
-            "period": "2024-01-23",
-            "storage": {
-                "address": "г. Москва. ул. Академика Королева, 10",
-                "description": "",
-                "id": "1fbbced64e3e474eb27e0f464161c61b",
-                "is_error": true,
-                "name": "default"
-            },
-            "storage_type": true,
-            "unit": {
-                "base_unit": {
-                    "base_unit": null,
-                    "coefficient": 1,
-                    "description": "",
-                    "id": "d113c297f698464a85cff3e803f36ce7",
-                    "is_error": true,
-                    "name": "миллилитр"
-                },
-                "coefficient": 1000,
-                "description": "",
-                "id": "d486cc7e786f4b828933d5ace911a875",
-                "is_error": true,
-                "name": "литр"
-            },
-            "value": 1
-        },
-        {
-            "description": "",
-            "id": "a77598bd2dc944cc9c9ed05579c0caa4",
-            "is_error": true,
-            "name": "sample_credit_transaction",
-            "nomenclature": {
-                "description": "",
-                "group": {
-                    "description": "",
-                    "id": "18277c4705764bf0893dbd49f2930c34",
-                    "is_error": true,
-                    "name": "Ингредиенты"
-                },
-                "id": "bf459ed1953f437fa0a1a7f2f3c87f46",
-                "is_error": true,
-                "name": "Какао",
-                "unit": {
-                    "base_unit": {
-                        "base_unit": null,
-                        "coefficient": 1,
-                        "description": "",
-                        "id": "5f73f137f82f4d7eb2d529a83b54b982",
-                        "is_error": true,
-                        "name": "грамм"
-                    },
-                    "coefficient": 1000,
-                    "description": "",
-                    "id": "1bed8c4830a64ab987692730fb43e84c",
-                    "is_error": true,
-                    "name": "киллограмм"
-                }
-            },
-            "period": "2024-01-12",
-            "storage": {
-                "address": "г. Москва. ул. Академика Королева, 10",
-                "description": "",
-                "id": "1fbbced64e3e474eb27e0f464161c61b",
-                "is_error": true,
-                "name": "default"
-            },
-            "storage_type": true,
-            "unit": {
-                "base_unit": {
-                    "base_unit": null,
-                    "coefficient": 1,
-                    "description": "",
-                    "id": "d8e5cf980f724a0b97b6a5ef65af6b1b",
-                    "is_error": true,
-                    "name": "грамм"
-                },
-                "coefficient": 1000,
-                "description": "",
-                "id": "51fa5f0d487d4989bc4439e025a42255",
-                "is_error": true,
-                "name": "киллограмм"
-            },
-            "value": 1
-        },
-        {
-            "description": "",
-            "id": "22df33c9d3a543d980c9cda91fe7685c",
-            "is_error": true,
-            "name": "sample_credit_transaction",
-            "nomenclature": {
-                "description": "",
-                "group": {
-                    "description": "",
-                    "id": "18277c4705764bf0893dbd49f2930c34",
-                    "is_error": true,
-                    "name": "Ингредиенты"
-                },
-                "id": "998f959f17704d85b0fad15936283032",
-                "is_error": true,
-                "name": "Сливочное масло",
-                "unit": {
-                    "base_unit": {
-                        "base_unit": null,
-                        "coefficient": 1,
-                        "description": "",
-                        "id": "5f73f137f82f4d7eb2d529a83b54b982",
-                        "is_error": true,
-                        "name": "грамм"
-                    },
-                    "coefficient": 1000,
-                    "description": "",
-                    "id": "1bed8c4830a64ab987692730fb43e84c",
-                    "is_error": true,
-                    "name": "киллограмм"
-                }
-            },
-            "period": "2024-01-12",
-            "storage": {
-                "address": "г. Москва. ул. Академика Королева, 10",
-                "description": "",
-                "id": "1fbbced64e3e474eb27e0f464161c61b",
-                "is_error": true,
-                "name": "default"
-            },
-            "storage_type": true,
-            "unit": {
-                "base_unit": {
-                    "base_unit": null,
-                    "coefficient": 1,
-                    "description": "",
-                    "id": "d8e5cf980f724a0b97b6a5ef65af6b1b",
-                    "is_error": true,
-                    "name": "грамм"
-                },
-                "coefficient": 1000,
-                "description": "",
-                "id": "51fa5f0d487d4989bc4439e025a42255",
-                "is_error": true,
-                "name": "киллограмм"
-            },
-            "value": 0.5
-        },
-        {
-            "description": "",
-            "id": "1a35d9478dcd49ecae266acf21c50da3",
-            "is_error": true,
-            "name": "sample_credit_transaction",
-            "nomenclature": {
-                "description": "",
-                "group": {
-                    "description": "",
-                    "id": "18277c4705764bf0893dbd49f2930c34",
-                    "is_error": true,
-                    "name": "Ингредиенты"
-                },
-                "id": "1696620e15b74a70b7fbd3c28076255b",
-                "is_error": true,
-                "name": "Сыр Пармезан",
-                "unit": {
-                    "base_unit": {
-                        "base_unit": null,
-                        "coefficient": 1,
-                        "description": "",
-                        "id": "5f73f137f82f4d7eb2d529a83b54b982",
-                        "is_error": true,
-                        "name": "грамм"
-                    },
-                    "coefficient": 1000,
-                    "description": "",
-                    "id": "1bed8c4830a64ab987692730fb43e84c",
-                    "is_error": true,
-                    "name": "киллограмм"
-                }
-            },
-            "period": "2024-01-24",
-            "storage": {
-                "address": "г. Москва. ул. Академика Королева, 10",
-                "description": "",
-                "id": "1fbbced64e3e474eb27e0f464161c61b",
-                "is_error": true,
-                "name": "default"
-            },
-            "storage_type": true,
-            "unit": {
-                "base_unit": {
-                    "base_unit": null,
-                    "coefficient": 1,
-                    "description": "",
-                    "id": "d8e5cf980f724a0b97b6a5ef65af6b1b",
-                    "is_error": true,
-                    "name": "грамм"
-                },
-                "coefficient": 1000,
-                "description": "",
-                "id": "51fa5f0d487d4989bc4439e025a42255",
-                "is_error": true,
-                "name": "киллограмм"
-            },
-            "value": 0.3
-        },
-        {
-            "description": "",
-            "id": "26f95d36c7d149d9bd42e36a185ea846",
-            "is_error": true,
-            "name": "sample_credit_transaction",
-            "nomenclature": {
-                "description": "",
-                "group": {
-                    "description": "",
-                    "id": "18277c4705764bf0893dbd49f2930c34",
-                    "is_error": true,
-                    "name": "Ингредиенты"
-                },
-                "id": "0be1452f2ae649e88008a595ba309aba",
-                "is_error": true,
-                "name": "Ванилиин",
-                "unit": {
-                    "base_unit": null,
-                    "coefficient": 1,
-                    "description": "",
-                    "id": "4e2440552fd04af4b7d3df1031b2aedd",
+                    "id": "ab7a514f98ab49f39d80cbc9b58ae083",
                     "is_error": true,
                     "name": "грамм"
                 }
@@ -2157,7 +1635,7 @@
             "storage": {
                 "address": "г. Москва. ул. Академика Королева, 10",
                 "description": "",
-                "id": "1fbbced64e3e474eb27e0f464161c61b",
+                "id": "7ac08cf7b4004a75b63a23483650bd40",
                 "is_error": true,
                 "name": "default"
             },
@@ -2166,49 +1644,49 @@
                 "base_unit": null,
                 "coefficient": 1,
                 "description": "",
-                "id": "8d5f31aa6ca84177a6bd5761ab50f6fc",
+                "id": "508f115fbebc45a6b6f8d3839e38f136",
                 "is_error": true,
                 "name": "грамм"
             },
-            "value": 100
+            "value": 10
         },
         {
             "description": "",
-            "id": "9c495297d49540e68eb0f08ff6a9e9a8",
+            "id": "bf7b794f936c458ba9f64665fd5b6c22",
             "is_error": true,
             "name": "sample_credit_transaction",
             "nomenclature": {
                 "description": "",
                 "group": {
                     "description": "",
-                    "id": "18277c4705764bf0893dbd49f2930c34",
+                    "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
                     "is_error": true,
                     "name": "Ингредиенты"
                 },
-                "id": "fb5741984d24441789ecd2a2d0c6637a",
+                "id": "f97e6e62bf324613b6d46944254200a3",
                 "is_error": true,
-                "name": "Соль",
+                "name": "Лимонный сок",
                 "unit": {
                     "base_unit": {
                         "base_unit": null,
                         "coefficient": 1,
                         "description": "",
-                        "id": "5f73f137f82f4d7eb2d529a83b54b982",
+                        "id": "ccebd30653604e079e414d631110d3ab",
                         "is_error": true,
-                        "name": "грамм"
+                        "name": "миллилитр"
                     },
                     "coefficient": 1000,
                     "description": "",
-                    "id": "1bed8c4830a64ab987692730fb43e84c",
+                    "id": "018d0d9fe93f4bd0b22683f7520de8df",
                     "is_error": true,
-                    "name": "киллограмм"
+                    "name": "литр"
                 }
             },
-            "period": "2024-01-01",
+            "period": "2024-01-17",
             "storage": {
                 "address": "г. Москва. ул. Академика Королева, 10",
                 "description": "",
-                "id": "1fbbced64e3e474eb27e0f464161c61b",
+                "id": "7ac08cf7b4004a75b63a23483650bd40",
                 "is_error": true,
                 "name": "default"
             },
@@ -2218,17 +1696,303 @@
                     "base_unit": null,
                     "coefficient": 1,
                     "description": "",
-                    "id": "d8e5cf980f724a0b97b6a5ef65af6b1b",
+                    "id": "55d07d69142b4eb3a923c3ba579be91d",
+                    "is_error": true,
+                    "name": "миллилитр"
+                },
+                "coefficient": 1000,
+                "description": "",
+                "id": "dd2117795da34ce28a8fc9859746b1c9",
+                "is_error": true,
+                "name": "литр"
+            },
+            "value": 1
+        },
+        {
+            "description": "",
+            "id": "a6f84f79ad8e4cf2bc8f60eff7f032e0",
+            "is_error": true,
+            "name": "sample_credit_transaction",
+            "nomenclature": {
+                "description": "",
+                "group": {
+                    "description": "",
+                    "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
+                    "is_error": true,
+                    "name": "Ингредиенты"
+                },
+                "id": "2a1c1aff14684457b083356cef6c566a",
+                "is_error": true,
+                "name": "Какао",
+                "unit": {
+                    "base_unit": {
+                        "base_unit": null,
+                        "coefficient": 1,
+                        "description": "",
+                        "id": "fadecbe67f34430da6ae5ea1dcbadaff",
+                        "is_error": true,
+                        "name": "грамм"
+                    },
+                    "coefficient": 1000,
+                    "description": "",
+                    "id": "fb04660c9c54435dbf0303cbb17b9deb",
+                    "is_error": true,
+                    "name": "киллограмм"
+                }
+            },
+            "period": "2024-01-10",
+            "storage": {
+                "address": "г. Москва. ул. Академика Королева, 10",
+                "description": "",
+                "id": "7ac08cf7b4004a75b63a23483650bd40",
+                "is_error": true,
+                "name": "default"
+            },
+            "storage_type": true,
+            "unit": {
+                "base_unit": {
+                    "base_unit": null,
+                    "coefficient": 1,
+                    "description": "",
+                    "id": "89a06e618cc043c3a005e13fcb8b92ea",
                     "is_error": true,
                     "name": "грамм"
                 },
                 "coefficient": 1000,
                 "description": "",
-                "id": "51fa5f0d487d4989bc4439e025a42255",
+                "id": "fdcea1999ba64a2e9f8629f9dc686567",
                 "is_error": true,
                 "name": "киллограмм"
             },
             "value": 1
+        },
+        {
+            "description": "",
+            "id": "e23c2ef4be804ba89ec67e3a387e6376",
+            "is_error": true,
+            "name": "sample_credit_transaction",
+            "nomenclature": {
+                "description": "",
+                "group": {
+                    "description": "",
+                    "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
+                    "is_error": true,
+                    "name": "Ингредиенты"
+                },
+                "id": "b7a1a39f67d1417aa9aa02d0267ad564",
+                "is_error": true,
+                "name": "Сливочное масло",
+                "unit": {
+                    "base_unit": {
+                        "base_unit": null,
+                        "coefficient": 1,
+                        "description": "",
+                        "id": "fadecbe67f34430da6ae5ea1dcbadaff",
+                        "is_error": true,
+                        "name": "грамм"
+                    },
+                    "coefficient": 1000,
+                    "description": "",
+                    "id": "fb04660c9c54435dbf0303cbb17b9deb",
+                    "is_error": true,
+                    "name": "киллограмм"
+                }
+            },
+            "period": "2024-01-31",
+            "storage": {
+                "address": "г. Москва. ул. Академика Королева, 10",
+                "description": "",
+                "id": "7ac08cf7b4004a75b63a23483650bd40",
+                "is_error": true,
+                "name": "default"
+            },
+            "storage_type": true,
+            "unit": {
+                "base_unit": {
+                    "base_unit": null,
+                    "coefficient": 1,
+                    "description": "",
+                    "id": "89a06e618cc043c3a005e13fcb8b92ea",
+                    "is_error": true,
+                    "name": "грамм"
+                },
+                "coefficient": 1000,
+                "description": "",
+                "id": "fdcea1999ba64a2e9f8629f9dc686567",
+                "is_error": true,
+                "name": "киллограмм"
+            },
+            "value": 0.5
+        },
+        {
+            "description": "",
+            "id": "b81ac7594ed04ae292caf6cefa6c708f",
+            "is_error": true,
+            "name": "sample_credit_transaction",
+            "nomenclature": {
+                "description": "",
+                "group": {
+                    "description": "",
+                    "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
+                    "is_error": true,
+                    "name": "Ингредиенты"
+                },
+                "id": "d905d25761c1494a9e8116850f7bba64",
+                "is_error": true,
+                "name": "Сыр Пармезан",
+                "unit": {
+                    "base_unit": {
+                        "base_unit": null,
+                        "coefficient": 1,
+                        "description": "",
+                        "id": "fadecbe67f34430da6ae5ea1dcbadaff",
+                        "is_error": true,
+                        "name": "грамм"
+                    },
+                    "coefficient": 1000,
+                    "description": "",
+                    "id": "fb04660c9c54435dbf0303cbb17b9deb",
+                    "is_error": true,
+                    "name": "киллограмм"
+                }
+            },
+            "period": "2024-01-16",
+            "storage": {
+                "address": "г. Москва. ул. Академика Королева, 10",
+                "description": "",
+                "id": "7ac08cf7b4004a75b63a23483650bd40",
+                "is_error": true,
+                "name": "default"
+            },
+            "storage_type": true,
+            "unit": {
+                "base_unit": {
+                    "base_unit": null,
+                    "coefficient": 1,
+                    "description": "",
+                    "id": "89a06e618cc043c3a005e13fcb8b92ea",
+                    "is_error": true,
+                    "name": "грамм"
+                },
+                "coefficient": 1000,
+                "description": "",
+                "id": "fdcea1999ba64a2e9f8629f9dc686567",
+                "is_error": true,
+                "name": "киллограмм"
+            },
+            "value": 0.3
+        },
+        {
+            "description": "",
+            "id": "71806e74234740ab96f2051aaa6fb266",
+            "is_error": true,
+            "name": "sample_credit_transaction",
+            "nomenclature": {
+                "description": "",
+                "group": {
+                    "description": "",
+                    "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
+                    "is_error": true,
+                    "name": "Ингредиенты"
+                },
+                "id": "495964499efa4d5899397b26f9b3a2c2",
+                "is_error": true,
+                "name": "Ванилиин",
+                "unit": {
+                    "base_unit": null,
+                    "coefficient": 1,
+                    "description": "",
+                    "id": "ab7a514f98ab49f39d80cbc9b58ae083",
+                    "is_error": true,
+                    "name": "грамм"
+                }
+            },
+            "period": "2024-01-12",
+            "storage": {
+                "address": "г. Москва. ул. Академика Королева, 10",
+                "description": "",
+                "id": "7ac08cf7b4004a75b63a23483650bd40",
+                "is_error": true,
+                "name": "default"
+            },
+            "storage_type": true,
+            "unit": {
+                "base_unit": null,
+                "coefficient": 1,
+                "description": "",
+                "id": "508f115fbebc45a6b6f8d3839e38f136",
+                "is_error": true,
+                "name": "грамм"
+            },
+            "value": 100
+        },
+        {
+            "description": "",
+            "id": "b0f2f79448d74f6cacef7a68f8dd9fb9",
+            "is_error": true,
+            "name": "sample_credit_transaction",
+            "nomenclature": {
+                "description": "",
+                "group": {
+                    "description": "",
+                    "id": "a4d5f8c2f46d4dbbb15602679afff4ce",
+                    "is_error": true,
+                    "name": "Ингредиенты"
+                },
+                "id": "6eddc9037d984c68a222b1c72eba329e",
+                "is_error": true,
+                "name": "Соль",
+                "unit": {
+                    "base_unit": {
+                        "base_unit": null,
+                        "coefficient": 1,
+                        "description": "",
+                        "id": "fadecbe67f34430da6ae5ea1dcbadaff",
+                        "is_error": true,
+                        "name": "грамм"
+                    },
+                    "coefficient": 1000,
+                    "description": "",
+                    "id": "fb04660c9c54435dbf0303cbb17b9deb",
+                    "is_error": true,
+                    "name": "киллограмм"
+                }
+            },
+            "period": "2024-01-03",
+            "storage": {
+                "address": "г. Москва. ул. Академика Королева, 10",
+                "description": "",
+                "id": "7ac08cf7b4004a75b63a23483650bd40",
+                "is_error": true,
+                "name": "default"
+            },
+            "storage_type": true,
+            "unit": {
+                "base_unit": {
+                    "base_unit": null,
+                    "coefficient": 1,
+                    "description": "",
+                    "id": "89a06e618cc043c3a005e13fcb8b92ea",
+                    "is_error": true,
+                    "name": "грамм"
+                },
+                "coefficient": 1000,
+                "description": "",
+                "id": "fdcea1999ba64a2e9f8629f9dc686567",
+                "is_error": true,
+                "name": "киллограмм"
+            },
+            "value": 1
+        }
+    ],
+    "storage_row_turn_model": [
+        {
+            "description": "",
+            "id": "f125306ea69b4b9185997b7d94d4d29c",
+            "is_error": true,
+            "name": null,
+            "nomenclature": null,
+            "value": 0
         }
     ],
     "unit_model": [
@@ -2236,7 +2000,7 @@
             "base_unit": null,
             "coefficient": 1,
             "description": "",
-            "id": "8d5f31aa6ca84177a6bd5761ab50f6fc",
+            "id": "508f115fbebc45a6b6f8d3839e38f136",
             "is_error": true,
             "name": "грамм"
         },
@@ -2245,13 +2009,13 @@
                 "base_unit": null,
                 "coefficient": 1,
                 "description": "",
-                "id": "d8e5cf980f724a0b97b6a5ef65af6b1b",
+                "id": "89a06e618cc043c3a005e13fcb8b92ea",
                 "is_error": true,
                 "name": "грамм"
             },
             "coefficient": 1000,
             "description": "",
-            "id": "51fa5f0d487d4989bc4439e025a42255",
+            "id": "fdcea1999ba64a2e9f8629f9dc686567",
             "is_error": true,
             "name": "киллограмм"
         },
@@ -2260,13 +2024,13 @@
                 "base_unit": null,
                 "coefficient": 1,
                 "description": "",
-                "id": "d113c297f698464a85cff3e803f36ce7",
+                "id": "55d07d69142b4eb3a923c3ba579be91d",
                 "is_error": true,
                 "name": "миллилитр"
             },
             "coefficient": 1000,
             "description": "",
-            "id": "d486cc7e786f4b828933d5ace911a875",
+            "id": "dd2117795da34ce28a8fc9859746b1c9",
             "is_error": true,
             "name": "литр"
         },
@@ -2274,7 +2038,7 @@
             "base_unit": null,
             "coefficient": 1,
             "description": "",
-            "id": "ab87512809eb4da6bf6cc026c6740983",
+            "id": "abd94bc58ac24f32b4863e0d5f561d06",
             "is_error": true,
             "name": "миллилитр"
         },
@@ -2282,7 +2046,7 @@
             "base_unit": null,
             "coefficient": 1,
             "description": "",
-            "id": "aaa9f8244b2a4f1ca199b0b376967213",
+            "id": "1ed64f51e3e542ff8f5b814187f6a11e",
             "is_error": true,
             "name": "штука"
         }
