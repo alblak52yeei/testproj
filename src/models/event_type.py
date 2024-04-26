@@ -18,7 +18,7 @@ class event_type(reference):
     @staticmethod
     def deleted_nomenclature() -> str:
         """
-            Событие удаления номенлатуры
+            Событие о удалении номенклатуры
         Returns:
             str: _description_
         """

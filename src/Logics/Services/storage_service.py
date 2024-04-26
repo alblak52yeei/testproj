@@ -7,6 +7,7 @@ from Src.Storage.storage import storage
 from Src.Logics.Services.service import service
 from Src.Models.event_type import event_type
 from Src.Logics.storage_observer import storage_observer
+from Src.reference import reference
 
 
 from datetime import datetime
@@ -188,7 +189,6 @@ class storage_service(service):
         if len(turns) <= 0:
             raise operation_exception("По указанному рецепту не найдеты обороты!")
         
-        print("len", len(receipt.rows()), len(turns))
         if len(receipt.rows()) > len(turns):
             raise operation_exception("Невозможно сформировать список транзакций для списания т.к. нет достаточно остатков!")
         
@@ -203,13 +203,13 @@ class storage_service(service):
     
     # Набор основных методов   
         
-    def handle_event(self, handle_type: str, arg = None):
+    def handle_event(self,  handle_type:  str):
         """
             Обработать событие
         Args:
             handle_type (str): _description_
         """
-        super().handle_event(handle_type, arg)
+        super().handle_event(handle_type)
         
         if handle_type == event_type.changed_block_period():
             self.__build_blocked_turns()
