@@ -43,11 +43,11 @@ class service(ABC):
         return self.__settings
 
     @abstractclassmethod
-    def handle_event(self, handle_type: str ):
+    def handle_event(self, handle_type: str, arg = None ):
         """
             Обработать событие
         Args:
-            handle_type (str): Ключ
+            handle_type (str): _description_
         """
         exception_proxy.validate(handle_type, str )
         pass

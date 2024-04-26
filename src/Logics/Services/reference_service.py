@@ -3,19 +3,20 @@ from Src.exceptions import exception_proxy, operation_exception
 from Src.reference import reference
 from Src.Logics.storage_observer import storage_observer
 from Src.Models.event_type import event_type
-from Src.Logics.Services.post_processing_service import post_processing_service
+from Src.Logics.logger import logger
 
 #
 # Сервис для выполнения CRUD операций
 #
 class reference_service(service):
+    __logger: logger = None
 
     def __init__(self, data: list) -> None:
         super().__init__(data)
         storage_observer.observers.append(self)
-        post_processing_service( self.data )
-        
-        
+        # Инициализируем логгер
+        self.__logger = logger(logger.log_type_debug())
+
     def add(self, item: reference) -> bool:
         """
             Добавить новый элемент
@@ -25,6 +26,7 @@ class reference_service(service):
         if len(found) > 0:
             return False
         
+        self.__logger.write(f"Добавлен новый элемент: (ID: {item.id}; NAME: {item.name})")
         self.data.append(item)
         return True
     
@@ -36,15 +38,11 @@ class reference_service(service):
         found = list(filter(lambda x: x.id == item.id , self.data))     
         if len(found) == 0:
             return False
-        item = found[0]
-       
-        # Найти нужный наблюдатель и вызвать событие        
-        observer_item = storage_observer.get( storage_observer.post_processing_service_key() )
-        observer_item.nomenclature = item
-        storage_observer.raise_event(  event_type.deleted_nomenclature()  )    
+        
+        self.__logger.write(f"Удалён элемент: (ID: {item.id}; NAME: {item.name})")
+        self.data.remove(found[0])
 
-	# Удалить элемент
-        self.data.remove(item)
+        storage_observer().raise_event(event_type.deleted_nomenclature(), item)
         return True
 
     def change(self, item:reference) -> bool:
@@ -77,13 +75,13 @@ class reference_service(service):
         
         return found
     
-    def handle_event(self, handle_type: str):
+    def handle_event(self, handle_type: str, arg = None):
         """
             Обработать событие
         Args:
             handle_type (str): _description_
         """
-        super().handle_event(handle_type)
+        super().handle_event(handle_type, arg)
 
 
 

@@ -1,13 +1,18 @@
 import json
 
+from Src.Logics.logger import logger
+
 #
 # Класс для обработки и хранения текстовой информации об ошибке
 #
 class error_proxy:
     " Текст с описание ошибки "
     _error_text = ""
-    
+    _logger: logger = None
+
     def __init__(self, exception: Exception = None):
+        self._logger = logger(logger.log_type_error())
+
         if exception is not None:
             self.set_error(exception)
     
@@ -39,6 +44,7 @@ class error_proxy:
             self._error_text = ""
             return
             
+        logger.write(str(exception))
         self._error_text = "Ошибка! " + str(exception)    
             
     @property        
@@ -83,6 +89,8 @@ class error_proxy:
         # Формируем описание        
         json_text = json.dumps({"details" : message}, sort_keys = True, indent = 4,  ensure_ascii = False)  
         
+        logger.write(f"error response: {message}")
+
         # Формируем результат
         result = app.response_class(
             response =   f"{json_text}",
