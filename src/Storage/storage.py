@@ -4,8 +4,9 @@ import os
 from Src.exceptions import operation_exception, exception_proxy
 from Src.Logics.convert_factory import convert_factory
 from Src.reference import reference
-
-
+from Src.Models.event_type import event_type
+from Src.Models.nomenclature_model import nomenclature_model
+from Src.Logics.storage_observer import storage_observer
 #
 # Класс хранилище данных
 #
@@ -53,7 +54,7 @@ class storage():
                 
                 self.__data = {}
                 for key in storage.storage_keys(storage):
-                    if key in source.keys():
+                    if key in source.keys() and key != self.log_key():
                         source_data = source[key]
                         self.__data[key] = []
                         
@@ -61,6 +62,9 @@ class storage():
                             object = self.__mapping[key]
                             instance = object().load(item)
                             self.__data[key].append(instance)
+
+            # Инициализируем логи, поскольку их не нужно десеализировать
+            self.__data[self.log_key()] = []
 
         except Exception as ex:
             raise operation_exception(f"Ошибка при чтении данных. Файл {self.__storage_file}\n{ex}")
@@ -99,7 +103,7 @@ class storage():
         exception_proxy.validate(turns, list)
         if len(turns) > 0:
             self.__data[ storage.blocked_turns_key() ] = turns
-            # self.save()
+            #self.save()
             
             
     @staticmethod
@@ -158,8 +162,15 @@ class storage():
             _type_: _description_
         """
         return "receipe_model"
-    
-    # Код взят: https://github.com/UpTechCompany/GitExample/blob/6665bc70c4933da12f07c0a0d7a4fc638c157c40/storage/storage.py#L30
+        
+    @staticmethod
+    def log_key():
+        """
+            Список логов
+        Returns:
+            _type_: _description_
+        """
+        return "log_model"
     
     @staticmethod
     def storage_keys(cls):

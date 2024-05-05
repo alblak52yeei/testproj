@@ -25,7 +25,6 @@ class nomenclature_test(unittest.TestCase):
         item.unit = unit
 
         # Проверка
-        print(item.unit)
         assert item is not None
 
     # 
