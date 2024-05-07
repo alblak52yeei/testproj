@@ -18,29 +18,26 @@ class event_type(reference):
     @staticmethod
     def deleted_nomenclature() -> str:
         """
-            Событие удаления номенлатуры
+            Событие о удалении номенклатуры
         Returns:
             str: _description_
         """
         return "deleted_nomenclature"
-    
+
     @staticmethod
-    def settings_changed() -> str:
+    def write_log() -> str:
         """
-            Событие изменения настроек
+            Событие - запись в лог
         Returns:
-            str: _description_
+            str: _description_ 
         """
-        return "settings_changed"
+        return "write_log"    
     
     @staticmethod
-    def info_log_writed() -> str:
-        return "info_log_writed"
-    
-    @staticmethod
-    def debug_log_writed() -> str:
-        return "debug_log_writed"
-    
-    @staticmethod
-    def error_log_writed() -> str:
-        return "error_log_writed"
+    def save_log() -> str:
+        """
+            Событие - сохранить лог
+        Returns:
+            str: _description_    
+        """
+        return "save_log"

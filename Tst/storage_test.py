@@ -1,9 +1,13 @@
 import unittest
 from Src.settings_manager import settings_manager
 from Src.Logics.start_factory import start_factory
-from Src.exceptions import operation_exception
+from Src.Logics.Services.log_service import log_service
 
 class storage_test(unittest.TestCase):
+
+    def __init__(self, methodName: str = "runTest") -> None:
+        super().__init__(methodName)
+        log_service()
 
     #
     # Проверить сохранение данных
@@ -16,10 +20,10 @@ class storage_test(unittest.TestCase):
         storage = start.storage
 
         # Действие
-        #result = storage.save()
+        result = storage.save()
 
         # Проверки
-        #assert result == True
+        assert result == True
 
     #
     # Проверить загрузку данных
