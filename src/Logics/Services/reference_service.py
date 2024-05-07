@@ -3,19 +3,19 @@ from Src.exceptions import exception_proxy, operation_exception
 from Src.reference import reference
 from Src.Logics.storage_observer import storage_observer
 from Src.Models.event_type import event_type
-from Src.Logics.logger import logger
+#from Src.Logics.logger import logger
 
 #
 # Сервис для выполнения CRUD операций
 #
 class reference_service(service):
-    __logger: logger = None
+    #__logger: logger = None
 
     def __init__(self, data: list) -> None:
         super().__init__(data)
         storage_observer.observers.append(self)
         # Инициализируем логгер
-        self.__logger = logger(logger.log_type_debug())
+        #self.__logger = logger(logger.log_type_debug())
 
     def add(self, item: reference) -> bool:
         """
@@ -26,7 +26,8 @@ class reference_service(service):
         if len(found) > 0:
             return False
         
-        self.__logger.write(f"Добавлен новый элемент: (ID: {item.id}; NAME: {item.name})")
+        storage_observer().raise_event(event_type.debug_log_writed(), f"Добавлен новый элемент: (ID: {item.id}; NAME: {item.name})")
+        #self.__logger.write(f"Добавлен новый элемент: (ID: {item.id}; NAME: {item.name})")
         self.data.append(item)
         return True
     
@@ -39,7 +40,8 @@ class reference_service(service):
         if len(found) == 0:
             return False
         
-        self.__logger.write(f"Удалён элемент: (ID: {item.id}; NAME: {item.name})")
+        storage_observer().raise_event(event_type.debug_log_writed(), f"Удалён элемент: (ID: {item.id}; NAME: {item.name})")
+        #self.__logger.write(f"Удалён элемент: (ID: {item.id}; NAME: {item.name})")
         self.data.remove(found[0])
 
         storage_observer().raise_event(event_type.deleted_nomenclature(), item)

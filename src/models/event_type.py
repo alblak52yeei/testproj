@@ -32,3 +32,15 @@ class event_type(reference):
             str: _description_
         """
         return "settings_changed"
+    
+    @staticmethod
+    def info_log_writed() -> str:
+        return "info_log_writed"
+    
+    @staticmethod
+    def debug_log_writed() -> str:
+        return "debug_log_writed"
+    
+    @staticmethod
+    def error_log_writed() -> str:
+        return "error_log_writed"

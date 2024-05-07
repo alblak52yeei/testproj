@@ -6,7 +6,7 @@ from Src.settings import settings
 from Src.errors import error_proxy
 from Src.exceptions import exception_proxy, operation_exception
 from Src.Logics.convert_factory import convert_factory
-from Src.Logics.logger import logger
+#from Src.Logics.logger import logger
 from Src.Logics.storage_observer import storage_observer
 from Src.Models.event_type import event_type
 
@@ -25,7 +25,7 @@ class settings_manager(object):
     # Описание ошибок
     _error = error_proxy()
     # Логгер
-    _logger: logger = None
+    #_logger: logger = None
     
     def __new__(cls):
         if not hasattr(cls, 'instance'):
