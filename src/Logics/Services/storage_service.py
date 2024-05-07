@@ -7,7 +7,8 @@ from Src.Storage.storage import storage
 from Src.Logics.Services.service import service
 from Src.Models.event_type import event_type
 from Src.Logics.storage_observer import storage_observer
-from Src.Logics.logger import logger
+from Src.reference import reference
+
 
 from datetime import datetime
 
@@ -19,9 +20,7 @@ class storage_service(service):
     def __init__(self, data: list) -> None:
         super().__init__(data)
         storage_observer.observers.append(self)
-        # Инициализируем логгер
-        #self.__logger = logger(logger.log_type_debug())
-
+    
     def __build_turns(self, data: list) -> list:
         """
             Сформировать обороты
@@ -87,15 +86,7 @@ class storage_service(service):
         
         # Рассчитанные обороты
         calculated_turns = self.__build_turns( filter. data )
-
-        storage_observer().raise_event(event_type.debug_log_writed(),
-            f"Вызов create_turns (ARGS: {start_period.strftime('%m/%d/%Y')}, {
-            stop_period.strftime('%m/%d/%Y')})")
         
-        '''self.__logger.write(
-            f"Вызов create_turns (ARGS: {start_period.strftime('%m/%d/%Y')}, {
-            stop_period.strftime('%m/%d/%Y')})")'''
-
         # Сформируем результат
         aggregate_key = process_factory.aggregate_key()
         processing = process_factory().create( aggregate_key  )
@@ -131,12 +122,6 @@ class storage_service(service):
         # Рассчитанные обороты    
         calculated_turns =  self.__build_turns( filter. data )   
         
-        '''self.__logger.write(
-            f"Вызов create_turns_by_nomenclature (ARGS: {start_period.strftime('%m/%d/%Y')}, {stop_period.strftime('%m/%d/%Y')}, {nomenclature.id})")
-        '''
-        storage_observer().raise_event(event_type.debug_log_writed(),
-            f"Вызов create_turns_by_nomenclature (ARGS: {start_period.strftime('%m/%d/%Y')}, {stop_period.strftime('%m/%d/%Y')}, {nomenclature.id})")
-        
         # Сформируем результат
         aggregate_key = process_factory.aggregate_key()
         processing = process_factory().create( aggregate_key  )
@@ -154,16 +139,9 @@ class storage_service(service):
         exception_proxy.validate(nomenclature, nomenclature_model)
         prototype = storage_prototype(  self.data )  
         filter = prototype.filter_by_nomenclature( nomenclature )
-
         if not filter.is_empty:
             raise operation_exception(f"Невозможно сформировать обороты по указанным данных: {filter.error}")
-        
-              
-        '''self.__logger.write(
-            f"Вызов create_turns_only_nomenclature (ARGS: {nomenclature.id})")'''
-        storage_observer().raise_event(event_type.debug_log_writed(),
-            f"Вызов create_turns_only_nomenclature (ARGS: {nomenclature.id})")
-
+         
         return self.__build_turns( filter. data )   
     
     def create_turns_by_receipt(self, receipt: receipe_model) -> list:
@@ -191,12 +169,6 @@ class storage_service(service):
                     
             filter.data = self.data        
             
-        '''self.__logger.write(
-            f"Вызов create_turns_by_receipt (ARGS: {receipt.id})")'''
-        
-        storage_observer().raise_event(event_type.debug_log_writed(),
-            f"Вызов create_turns_by_receipt (ARGS: {receipt.id})")
-        
         return self.__build_turns( transactions )     
     
     def build_debits_by_receipt(self, receipt: receipe_model) -> list:
@@ -231,22 +203,16 @@ class storage_service(service):
     
     # Набор основных методов   
         
-    def handle_event(self, handle_type: str, arg = None):
+    def handle_event(self,  handle_type:  str):
         """
             Обработать событие
         Args:
             handle_type (str): _description_
         """
-        super().handle_event(handle_type, arg)
+        super().handle_event(handle_type)
         
         if handle_type == event_type.changed_block_period():
-            '''self.__logger.write(
-                f"Вызов handle_event:changed_block_period (ARGS: {arg})")'''
-            
-        storage_observer().raise_event(event_type.debug_log_writed(),
-            f"Вызов handle_event:changed_block_period (ARGS: {arg})")
-        
-        self.__build_blocked_turns()
+            self.__build_blocked_turns()
         
     
   

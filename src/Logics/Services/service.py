@@ -1,8 +1,8 @@
-from Src.exceptions import argument_exception, exception_proxy
+from Src.exceptions import argument_exception, exception_proxy, error_proxy
 from Src.Logics.convert_factory import convert_factory
 from Src.settings import settings
 from Src.settings_manager import settings_manager
-from Src.Models.event_type import event_type
+
 
 from abc import ABC, abstractclassmethod
 import json
@@ -16,10 +16,7 @@ class service(ABC):
     # Текущие настройки
     __settings: settings = None
     
-    def __init__(self, data: list) -> None:
-        if len(data) == 0:
-            raise argument_exception("Некорректно переданы параметры!")
-        
+    def __init__(self, data: list = None) -> None:
         self.__data = data
         options = settings_manager()
         self.__settings = options.settings
@@ -43,11 +40,11 @@ class service(ABC):
         return self.__settings
 
     @abstractclassmethod
-    def handle_event(self, handle_type: str, arg = None ):
+    def handle_event(self, handle_type: str ):
         """
             Обработать событие
         Args:
-            handle_type (str): _description_
+            handle_type (str): Ключ
         """
         exception_proxy.validate(handle_type, str )
         pass
@@ -62,19 +59,18 @@ class service(ABC):
         return service.create_response(app, inner_data)
 
     @staticmethod
-    def create_response( app, data:list):
+    def create_response( app, data):
         """
             Сформировать структуру ответа для Web сервера
         """        
         if app is None:
             raise argument_exception("Некорректно переданы параметры!")
         
-        exception_proxy.validate(data, list)
-
-        # Преоброзование
+        # Преобразование
         dest_data = convert_factory().serialize( data )
         json_text = json.dumps( dest_data, sort_keys = True, indent = 4,  ensure_ascii = False)  
-   
+        error_proxy.write_log(f"Сформирован ответ от сервера. Содержание:\n{json_text}") 
+        
         # Подготовить ответ    
         result = app.response_class(
             response = f"{json_text}",

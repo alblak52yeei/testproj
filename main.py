@@ -9,12 +9,6 @@ from Src.Logics.Services.storage_service import storage_service
 from Src.Models.nomenclature_model import nomenclature_model
 from Src.Logics.Services.service import service
 from Src.Logics.Services.reference_service import reference_service
-from Src.Logics.storage_observer import storage_observer
-from Src.Models.event_type import event_type
-from Src.Logics.Services.logger_service import logger_service
-
-
-#from Src.Logics.logger import logger
 
 
 
@@ -26,8 +20,7 @@ options = settings_manager()
 start = start_factory(options.settings)
 start.create()
 
-#logger = logger(logger.log_type_info())
-logger = logger_service([])
+
 # Отчетность
 
 @app.route("/api/report/<storage_key>", methods = ["GET"])
@@ -44,8 +37,6 @@ def get_report(storage_key: str):
     report = report_factory()
     data = start.storage.data
     
-    storage_observer.raise_event( event_type.info_log_writed(), f"Вызов get_report (storage_key: {storage_key})" ) 
-    #logger.write(f"Вызов get_report (storage_key: {storage_key})")
     # Формируем результат
     try:
         result = report.create_response( options.settings.report_mode, data, storage_key, app )  
@@ -77,9 +68,6 @@ def get_turns():
     source_data = start.storage.data[  storage.storage_transaction_key()   ]      
     data = storage_service( source_data   ).create_turns( start_date, stop_date )      
     result = service.create_response( app, data )
-
-    storage_observer.raise_event( event_type.info_log_writed(), f"Вызов get_turns" ) 
-    #logger.write(f"Вызов get_turns")
     return result
       
 @app.route("/api/storage/<nomenclature_id>/turns", methods = ["GET"] )
@@ -111,8 +99,7 @@ def get_turns_nomenclature(nomenclature_id):
         return error_proxy.create_error_response(app, "Некорректно передан код номенклатуры!", 400)
     
     nomenclature = nomenclatures[nomenclature_id]
-    storage_observer.raise_event( event_type.info_log_writed(), f"Вызов get_turns_nomenclature (nomenclature_id: {nomenclature_id})" ) 
-    #logger.write(f"Вызов get_turns_nomenclature (nomenclature_id: {nomenclature_id})")
+      
     data = storage_service( transactions_data  ).create_turns_by_nomenclature( start_date, stop_date, nomenclature )      
     result = service.create_response( data, app )
     return result      
@@ -130,9 +117,7 @@ def add_nomenclature():
         item = nomenclature_model().load(data)
         source_data = start.storage.data[  storage.nomenclature_key() ]
         result = reference_service( source_data ).add( item )
-        storage_observer.raise_event( event_type.info_log_writed(), f"Вызов add_nomenclature (data.name: {data.name})" ) 
-        #logger.write(f"Вызов add_nomenclature (data.name: {data.name})")
-        return service.create_response( {"result": result} )
+        return service.create_response( app, {"result": result} )
     except Exception as ex:
         return error_proxy.create_error_response(app,   f"Ошибка при добавлении данных!\n {ex}")
 
@@ -147,9 +132,7 @@ def delete_nomenclature():
         item = nomenclature_model().load(data)
         source_data = start.storage.data[  storage.nomenclature_key() ]
         result = reference_service( source_data ).delete( item )
-        storage_observer.raise_event( event_type.info_log_writed(), f"Вызов add_nomenclature (item.id: {item.id})" ) 
-        #logger.write(f"Вызов add_nomenclature (item.id: {item.id})")
-        return service.delete_nomenclature( {"result": result} )
+        return service.create_response( app, {"result": result} )
     except Exception as ex:
         return error_proxy.create_error_response(app,   f"Ошибка при удалении данных!\n {ex}")
 
@@ -164,9 +147,7 @@ def change_nomenclature():
         item = nomenclature_model().load(data)
         source_data = start.storage.data[  storage.nomenclature_key() ]
         result = reference_service( source_data ).change( item )
-        storage_observer.raise_event( event_type.info_log_writed(), f"Вызов change_nomenclature (item.id: {item.id})" ) 
-        #logger.write(f"Вызов change_nomenclature (item.id: {item.id})")
-        return service.create_response( {"result": result} )
+        return service.create_response( app, {"result": result} )
     except Exception as ex:
         return error_proxy.create_error_response(app,   f"Ошибка при изменении данных!\n {ex}")
     
@@ -176,10 +157,6 @@ def get_nomenclature():
         Получить список номенклатуры
     """
     args = request.args
-
-    storage_observer.raise_event( event_type.info_log_writed(), f"Вызов get_nomenclature" ) 
-    #logger.write(f"Вызов get_nomenclature")
-
     if "id" not in args.keys():
         # Вывод всех элементов
         source_data = start.storage.data[  storage.nomenclature_key() ]
@@ -195,15 +172,24 @@ def get_nomenclature():
             return error_proxy.create_error_response(app,   f"Ошибка при получении данных!\n {ex}")
 
 
+@app.route("/api/nomenclature/accepted", methods = ["GET"])
+def accepted_nomenclature():
+    """
+        Применить изменения. Сохранить в файл
+    """
+    try:
+        start.storage.save()
+        return service.create_response(app, {"result": True})
+    except Exception as ex:
+        return error_proxy.create_error_response(app,   f"Ошибка при сохранении данных!\n {ex}")
+
+
+
 # Номенклатура
 
 @app.route("/api/block_period", methods=["GET"])
 def get_block_period():
     args = request.args
-
-    storage_observer.raise_event( event_type.info_log_writed(), f"Вызов get_block_period" ) 
-    #logger.write(f"Вызов get_block_period")
-
     if "period" in args.keys():
 
         try:
@@ -218,4 +204,4 @@ def get_block_period():
 
 
 if __name__ == "__main__":
-    app.run(debug = True)
+    app.run(host="0.0.0.0", port=5000, debug = True)
