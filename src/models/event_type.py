@@ -34,6 +34,15 @@ class event_type(reference):
         return "write_log"    
     
     @staticmethod
+    def write_console_log() -> str:
+        """
+            Событие - запись в лог
+        Returns:
+            str: _description_ 
+        """
+        return "write_console_log"    
+    
+    @staticmethod
     def save_log() -> str:
         """
             Событие - сохранить лог
