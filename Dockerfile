@@ -1,12 +1,20 @@
-FROM python:3.12.3 AS base
+FROM python:3.10.14 as build
 WORKDIR /app
 EXPOSE 5000
 
+# Готовим окружение
+RUN pip3 install --upgrade pip
 RUN pip3 install -U Flask
 RUN pip3 install -U flask-restplus
 
-COPY ./Src /app/Src
-COPY ./main.py /app/main.py
-#COPY . /app/.
+# Копируем исходный код
+COPY Src /app/Src
+COPY main.py /app/
 
-CMD ["python", "main.py"]
+# Что скопировалось?
+RUN echo $(ls -1)
+
+# Запускаем
+CMD [ "python", "main.py" ]
+
+

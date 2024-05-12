@@ -73,8 +73,7 @@ class log_service(service):
         if handle_type == event_type.save_log():
             self.__observe_save_log()    
 
-        if handle_type == event_type.write_console_log():
-            print(str)
+
 
 
 
