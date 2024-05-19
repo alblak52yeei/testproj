@@ -12,6 +12,7 @@ from Src.settings import settings
 from Src.Storage.storage import storage
 from Src.exceptions import exception_proxy, operation_exception, argument_exception
 from Src.Logics.Services.log_service import log_service
+from Src.Logics.Services.console_log_service import console_log_service
 
 #
 # Класс для обработки данных. Начало работы приложения
@@ -27,6 +28,7 @@ class start_factory:
         self.__oprions = _options
         self.__storage = _storage
         log_service()
+        console_log_service()
 
         
     

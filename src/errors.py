@@ -144,6 +144,14 @@ class error_proxy:
             item.error = message
             item.log_type = log_type
 
+            observer_item.item = item           
+
+        observer_item = storage_observer.get( storage_observer .console_log_service_key() )
+        if observer_item is not None:
+            item = error_proxy()
+            item.error = message
+            item.log_type = log_type
+
             observer_item.item = item
-            storage_observer.raise_event( "write_log" )
-                
+            
+        storage_observer.raise_event( "write_log" )
