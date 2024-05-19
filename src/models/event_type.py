@@ -31,7 +31,7 @@ class event_type(reference):
         Returns:
             str: _description_ 
         """
-        return "write_log"    
+        return "write_log"      
     
     @staticmethod
     def save_log() -> str:

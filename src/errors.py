@@ -1,6 +1,7 @@
 import json
 from datetime import datetime
 
+from Src.Models.event_type import event_type
 from Src.Logics.storage_observer import storage_observer
 
 
@@ -74,6 +75,7 @@ class error_proxy:
             
         self.__error_text = f"Ошибка! {str(exception)}"    
         error_proxy.write_log(self.__error_text, "ERROR")
+        storage_observer.raise_event( event_type )
         storage_observer.raise_event( "save_log" )
 
             
@@ -121,8 +123,8 @@ class error_proxy:
         # Формируем описание        
         json_text = json.dumps({"details" : message}, sort_keys = True, indent = 4,  ensure_ascii = False)  
         error_proxy.write_log(f"Сформирован ответ от сервера. Содержание:\n{json_text}", "ERROR") 
-        
-        # Формируем результат
+       
+       # Формируем результат
         result = app.response_class(
             response =   f"{json_text}",
             status = code,
@@ -142,6 +144,14 @@ class error_proxy:
             item.error = message
             item.log_type = log_type
 
+            observer_item.item = item           
+
+        observer_item = storage_observer.get( storage_observer .console_log_service_key() )
+        if observer_item is not None:
+            item = error_proxy()
+            item.error = message
+            item.log_type = log_type
+
             observer_item.item = item
-            storage_observer.raise_event( "write_log" )
-                
+            
+        storage_observer.raise_event( "write_log" )
